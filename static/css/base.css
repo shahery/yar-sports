@@ -44,42 +44,43 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #0072b1;
     color: white;
     min-width: 260px;
     margin-left: 60%;
 }
 
-.btn-black {
-    background: black;
+.btn-blue {
+    background: #0072b1;
     color: white;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+    background: black;
+    color: #0072b1;
+}
+
+.text-blue {
+    color: #0072b1 !important;
+}
+
+.border-blue {
+    border: 1px solid #0072b1 !important;
+}
+
+.linkedin-blue {
+    background: #0072b1 !important;
 }
 
 .text-black {
-    color: black !important;
+    color: black;
 }
 
-.border-black {
-    border: 1px solid black !important;
-}
-
-.bg-black {
-    background: #000 !important;
-}
-
-.text-gold {
-    color: gold !important;
-}
 
 /* -------------------------------- Media Queries */
 
