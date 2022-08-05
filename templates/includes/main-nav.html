@@ -17,10 +17,10 @@
                 Cricket
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Cricket Bats & Balls</a>
-                <a href="" class="dropdown-item">Cricket Shoes</a>
-                <a href="" class="dropdown-item">Other Cricket Accessories</a>
-                <a href="" class="dropdown-item">All Cricket Products</a>
+                <a href="{% url 'products' %}?category=Cricket-Bats-And-Balls" class="dropdown-item">Cricket Bats & Balls</a>
+                <a href="{% url 'products' %}?category=Cricket-Shoes" class="dropdown-item">Cricket Shoes</a>
+                <a href="{% url 'products' %}?category=Other-Cricket-Accessories" class="dropdown-item">Other Cricket Accessories</a>
+                <a href="{% url 'products' %}?category=Cricket-Bats-And-Balls,Cricket-Shoes,Other-Cricket-Accessories" class="dropdown-item">All Cricket Products</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Football
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Nike & Adidas</a>
-                <a href="" class="dropdown-item">Others</a>
-                <a href="" class="dropdown-item">Football Trainers</a>
-                <a href="" class="dropdown-item">All Football Products</a>
+                <a href="{% url 'products' %}?category=Nike-and-Adidas" class="dropdown-item">Nike & Adidas</a>
+                <a href="{% url 'products' %}?category=Others-Football" class="dropdown-item">Others</a>
+                <a href="{% url 'products' %}?category=Football-Trainers" class="dropdown-item">Football Trainers</a>
+                <a href="{% url 'products' %}?category=Nike-and-Adidas,Others-Football,Football-Trainers" class="dropdown-item">All Football Products</a>
             </div>
         </li>
 
@@ -41,9 +41,9 @@
                 Badminton
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Rackets & Shuttles</a>
-                <a href="" class="dropdown-item">Badminton Shoes</a>
-                <a href="" class="dropdown-item">All Badminton Products</a>
+                <a href="{% url 'products' %}?category=Rackets-and-Shuttles" class="dropdown-item">Rackets & Shuttles</a>
+                <a href="{% url 'products' %}?category=Badminton-Shoes" class="dropdown-item">Badminton Shoes</a>
+                <a href="{% url 'products' %}?category=Rackets-and-Shuttles,Badminton-Shoes" class="dropdown-item">All Badminton Products</a>
             </div>
         </li>
 
@@ -52,10 +52,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=New-Arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=Deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=Clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=New-Arrivals,Deals,Clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
