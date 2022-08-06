@@ -55,6 +55,12 @@ body {
     color: white;
 }
 
+.btn-outline-blue {
+    background: white;
+    color: #0072b1 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #0072b1;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
