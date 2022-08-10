@@ -67,7 +67,7 @@ body {
 .btn-blue:hover,
 .btn-blue:active,
 .btn-blue:focus {
-    background: black;
+    background: whitesmoke;
     color: #0072b1;
 }
 
