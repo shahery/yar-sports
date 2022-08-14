@@ -73,14 +73,20 @@
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                    <i class="fas fa-tag mr-1 btn-blue"></i>{{ product.category.friendly_name }}
+                                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
                                             {% endif %}
                                             {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1 btn-blue"></i>{{ product.rating }} / 5</small>
+                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
+                                            {% endif %}
+                                            {% if request.user.is_superuser %}
+                                                <small class="ml-3">
+                                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                </small>
                                             {% endif %}
                                         </div>
                                     </div>
@@ -112,9 +118,9 @@
             </div>
         </div>
     </div>
-    <div class="btt-button shadow-sm rounded-0 border border-black">
+    <div class="btt-button shadow-sm rounded-0 border border-blue">
         <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-blue mx-auto my-auto"></i>
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>	
     </div>
 {% endblock %}
