@@ -10,6 +10,16 @@ body {
     font-family: 'Lato';
 }
 
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.middle {
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
