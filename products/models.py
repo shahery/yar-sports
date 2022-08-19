@@ -34,6 +34,7 @@ class Product(models.Model):
 class Comment(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE,
                              related_name="comments")
+    rating = models.FloatField(null=False, blank=False, default=True)
     name = models.CharField(max_length=80)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
