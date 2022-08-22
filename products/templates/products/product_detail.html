@@ -105,6 +105,13 @@
                             {% endwith %}
                         </div>
                     </form>
+                    <div>
+                        <form action="{% url 'add-to-wishlist' %}"  method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="product-id" value="{{product.id}}">
+                            <input type="submit" class="btn btn-blue rounded-0 mt-1 center text-uppercase" value="Add To Wishlist">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

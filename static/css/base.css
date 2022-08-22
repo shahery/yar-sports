@@ -20,6 +20,23 @@ body {
     padding-top: 3%;
 }
 
+.center {
+    margin-left: 0%;
+}
+
+.display {
+    display: none;
+}
+
+.alignment {
+    display: inline-block;
+}
+
+.size {
+    font-size: x-small;
+    font-weight: bold;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
