@@ -12,7 +12,7 @@
             content="Online sports shop with cricket, badminton and football equipments
             based in london. Subscribe our website for special offer alerts.">
         <meta name="keywords" 
-            content="Yaar Sports, cricket equipments, badminton equipments, football equipments,
+            content="Yar Sports, cricket equipments, badminton equipments, football equipments,
             sports shop online, sports store, sports shop london, best online sports shop">
 
 
@@ -155,12 +155,23 @@
     {% block content %}
     {% endblock %}
 
+    {% block testimonials %}
+    {% endblock %}
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
 
-    
   </body>
+  <div class="header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+  </div>
+  <footer class="footer mt-auto py-3 navbar fixed-bottom">
+     <p class="m-0 text-center move-center text-white">Yar Sports are best in providing good quality sports equipments<br>All rights reserved<i class="fa fa-copyright" aria-hidden="true"></i></p>
+     <p class="m-0 text-center move-right text-white">Follow us on:<br><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="visits my facebook page(open in a new tab)"></a><i class="fa fa-facebook-square" aria-hidden="true"></i></p>
+  </footer>
 </html>
