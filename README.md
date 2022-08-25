@@ -1,108 +1,187 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# YAR Sports
+  YAR Sports is the ecommerce sports website where cricket, football and badminton related sports
+  equipments are available for the sports lovers. YAR Sports not only provide quality sports products
+  but also in very reasonable prices compare to market and also we provide huge varieties products
+  especially in cricket and badminton comparatively other sports markets. This ecommerce website is 
+  created for the users who love buying online. In this sports website, there are a lot of functionalities
+  for the users like, users can easily find the products by searching in the website page, can add the
+  products in the wishlist to buy later by signing in first, can add the products in the bag to buy it, 
+  can update or remove the products in the bag , can securily checkout for payments by using debit card,
+  can view the order history in his profile, can leave a review on the products by signing in first and 
+  also can view the testimonials of our satisfied customers in the home page. Website owner can only add,
+  update and delete the products in the website both through admin panel and product management of the 
+  website.
 
-Welcome shahery,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+  The deployed link can be found here: [Live Site]
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Table of contents
+  * [Users stories](#users-stories)
+  * [Existing Features](#existing-features)
+  * [Technology Used](#technology-used)
+  * [Agile Technique](#agile-technique)
+  * [Features left to implement](#features-left-to-implement)
+  * [Testing](#testing)
+  * [Bugs](#bugs)
+  * [Project visualization](#project-visualiztion)
+  * [Colour](#colour)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
 
-## Gitpod Reminders
+# Users stories:
+  * As a user I can search the products to find it easily
+  * As a user I can easily create the account to use all the functionalities of the website
+  * As a user I can add the products in the wishlist to buy it later
+  * As a user I can add the products in the bag to buy it
+  * As a user I can see the subtotal of my shopping, so not to buy out of my budget
+  * As a user I can leave the review on the products
+  * As a user I can view the order history of my products in my profile
+  * As a user I can securily checkout for payments in the website
+  * As a user I can see the testimonials of satisfied customers in the website
+ 												
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+  [Back to top](#)
 
-`python3 -m http.server`
+# Existing Features
+  * Navbar:
+    * Users can read the categories, sign up and login using the links showing on the navbar.
+    
+  * After login Navbar:
+    * Users can read the categories, add post, add category and logout using the links showing on the navbar.
 
-A blue button should appear to click: _Make Public_,
+  * Sign Up:
+    * Users can register their account by clicking on the sign up button showing
+      on the navbar.
 
-Another blue button should appear to click: _Open Browser_.
+  * Login:
+    * Users can login by clicking on the button showing on the navbar next to 
+      sign up so that they can enjoy the functionalities of the website.
+      
+    * Note:
+          Users can only create, edit and delete the post by registering their account
+          on the website.
+       
+  * Search the products:
+    
+  * Wishlist:
+    * Users can read the postblog by clicking on the title link showing below the
+      image of the post.
+    
+  * Bag:
+    * Users can like the post by clicking on the icon of thumbs up.
+     
+  * Checkout form:
+    * Users can comment on the post by writing in the body field showing.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  * Profile:
+    * Users can edit or update the post by clicking on the edit button showing below 
+      the image of the post.
+    
+  * Testimonials:
 
-A blue button should appear to click: _Make Public_,
+  * Product Management:
+    
+  * Footer:
+    * Footer displays the social link and services of the website.
+      
+   [Back to top](#)
 
-Another blue button should appear to click: _Open Browser_.
+# Technology Used 
+  * [Html](https://en.wikipedia.org/wiki/HTML)
+  * [Css](https://en.wikipedia.org/wiki/CSS)
+  * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+  * [Boostrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+  * [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
+  * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+  * [GitHub](https://github.com)
+  * [Gitpod](https://www.gitpod.io)
+  * [Heroku](https://en.wikipedia.org/wiki/Heroku) 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+   [Back to top](#)
 
-To log into the Heroku toolbelt CLI:
+# Agile Technique:
+  * Agile technique is used in this project. You can have a look here
+    [Agile]
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ ## Features left to implement
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  
+# Testing
+ ## Python and Javascript Testing:
+  * automated tests for python and javascript were undertaken to check the functioning of the codes and it were all passed.
+  ![Python-test]
+  ![js-test]
 
-------
+ ## Validator Testing
+   I have manually tested this project by doing the following:
+   * Passed the code through a PEP8 linter and confirmed there are no problems
+   * PEP8
+     * No errors were returned from [PEP8 checker](http://pep8online.com/)
+   * Html checker:
+     * No errors were returned from [W3C Html](https://validator.w3.org/)
+   * CSS checker:
+     * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
+   * JS checker:
+     * No errors were returned from [JS HINT](https://jshint.com/)
 
-## Release History
+   * Accessiblity:
+     * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
+     in devtools.
+     * Generated report is here below
+     ![lighthouse report]
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+   [Back to top](#)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  ## Bugs
+   ### solved bugs
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+ ## Unfixed Bugs
+   * No unfixed bugs.
+   
+   [Back to top](#)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+# Project visualization diagram:
+  
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  [Back to top](#)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+# Colour
+  * #555, #fff, #0072b1, red, green, blue, whitesmoke, black, #6c757d, #ffc107, #343a40, #aab7c4, #dc3545, combination 
+   of these colours were used in the website for foreground and background.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  [Back to top](#)
+# Deployment
+ This project was deployed using the code institute's mock terminal for heroku.
+   * Steps for deployment:
+     * Create the env.py file, requirements.txt file and Procfile in the github for the
+       project you want to deploy
+     * Make it sure, you dont leave any empty newline in the Procfile
+     * Create a new heroku app
+     * Click on the resources in the heroku and add heroku postgres database for the project
+     * Heroku postgres will create the database_url in the config vars, just copy that and 
+       paste in the env.py file of your project in the github.
+     * If you are using the cloudinary for your project then you will have to copy
+       the cloudinary_url and paste in the env.py file same like database_url.
+     * In the config vars, you have to create the Port: 8000 and secret key for your project
+       and also copy and paste that secret key in env.py file of your project
+     * After all this done, click on the deploy tab and connect your repository you want to 
+       deploy with the heroku and click on the deploy branch
+     * Your project has been deployed now and you can see your project
+       clicking on the open app button.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  [Back to top](#)
+# Credits
+ ## Content
+   * The Idea of README.md file and the codes used for the website were also learnt from [Code Institute](https://codeinstitute.net)
+   * Few codes were also learnt from [codepiep](https://www.youtube.com/watch?v=A8rarkE0TKQ&ab_channel=codepiep)
+   * Few codes were taken from [Stack Overflow](https://stackoverflow.com/)
+   * pinax-testimonials were used in the project [pinax-testimonial](https://github.com/pinax/pinax-testimonials)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+ ## Media
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+ ## Acknowledgements
+   * My mentor who guided me througout the project.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+ [Back to top](#)
