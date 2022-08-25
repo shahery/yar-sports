@@ -4,13 +4,13 @@
   but also in very reasonable prices compare to market and also we provide huge varieties products
   especially in cricket and badminton comparatively other sports markets. This ecommerce website is 
   created for the users who love buying online. In this sports website, there are a lot of functionalities
-  for the users like, users can easily find the products by searching in the website page, can add the
-  products in the wishlist to buy later by signing in first, can add the products in the bag to buy it, 
-  can update or remove the products in the bag , can securily checkout for payments by using debit card,
-  can view the order history in his profile, can leave a review on the products by signing in first and 
-  also can view the testimonials of our satisfied customers in the home page. Website owner can only add,
-  update and delete the products in the website both through admin panel and product management of the 
-  website.
+  for the users like, users can create the account, users can easily find the products by searching in
+  the website page, can add the products in the wishlist to buy later by signing in first, can add the
+  products in the bag to buy it, can update or remove the products in the bag , can securily checkout
+  for payments by using debit card, can view the order history in his profile, can leave a review on the
+  products by signing in first and also can view the testimonials of our satisfied customers in the home
+  page. Website owner can only add, update and delete the products in the website both through admin panel
+  and product management of the website.
 
 
   The deployed link can be found here: [Live Site]
@@ -44,45 +44,81 @@
 
 # Existing Features
   * Navbar:
-    * Users can read the categories, sign up and login using the links showing on the navbar.
+    * Users can sign up and login using the dropdown menu(My Account) showing on the navbar and also can add the products
+    in the bag to buy and can securily checkout.
+    ![Navbar-before](https://user-images.githubusercontent.com/95220937/186769713-6e7dd512-efa4-42de-9df3-d8d532610c21.png)
     
   * After login Navbar:
-    * Users can read the categories, add post, add category and logout using the links showing on the navbar.
+    * Users can use one additional functionality of wishlist to add the products in the wishlist to buy it later and 
+    can see the products in the wishlist by using the icon showing on the navbar.
+    ![Navbar-login](https://user-images.githubusercontent.com/95220937/186769808-91d6644c-1557-43b0-ae56-4b3ba805a508.png)
 
   * Sign Up:
-    * Users can register their account by clicking on the sign up button showing
+    * Users can register their account by clicking on the register button showing in the dropdown list
       on the navbar.
+    ![Signup](https://user-images.githubusercontent.com/95220937/186769863-aefba13b-1cdb-4249-8641-bfed510a193a.png)
 
   * Login:
-    * Users can login by clicking on the button showing on the navbar next to 
-      sign up so that they can enjoy the functionalities of the website.
+    * Users can login by clicking on the login button showing in the dropdown list on the navbar.
+    ![Sign in](https://user-images.githubusercontent.com/95220937/186769924-94ca3705-dde2-444a-aad4-9a4949b85e0e.png)
       
-    * Note:
-          Users can only create, edit and delete the post by registering their account
-          on the website.
+  * Note:
+        Users can only use the functionality of wishlist, to leave review and profile to see his orders history by creating their account in the website.
        
   * Search the products:
+    * Users can search the products using search bar showing on the navbar to find the products easily.
+    ![Search](https://user-images.githubusercontent.com/95220937/186769984-f5092b81-80a4-4e57-b1e5-9899c1691f89.png)
+
+  * Main page:
+    * Main page of the website showing the functionalities and look of the website.
+    ![Main-page](https://user-images.githubusercontent.com/95220937/186772251-0500d975-bb4e-43a7-bd77-3f6b4b5c2505.png)
+
+  * Products:
+    * users can see the all the products either through clicking on the explore products button showing on the main background image or clicking on the all products button displaying on the navbar. Users can also see the products related to different sports by clicking on the buttons showing on the navbar and can see the deals, clearance, new arrivals.
+    ![Products](https://user-images.githubusercontent.com/95220937/186771820-6d65c8d7-17f3-427a-af4f-f93fadc08cb7.png)
+
+  * Product detail:
+    * Users can see the product detail by clicking on the products image.
+    ![Product-detail1](https://user-images.githubusercontent.com/95220937/186771971-6cebbaf8-b278-49bb-b32c-902306fe0d54.png)
+    ![Product-detail2](https://user-images.githubusercontent.com/95220937/186772017-c197321e-e69f-434b-9fb9-cb4d68594147.png)
+
+  * Reviews:
+    * Users can leave the review on the product by going to the bottom of products detail page.
+    * Note: Login required to leave the review on the product.
+    ![Reviews](https://user-images.githubusercontent.com/95220937/186772125-5971f072-59e0-4de0-b999-bf1269759c9d.png)
     
   * Wishlist:
-    * Users can read the postblog by clicking on the title link showing below the
-      image of the post.
+    * Users can add the products in the wishlist to buy it later by clicking on the Add To Wishlist button showing in the products detail page.
+    ![Wishlist1](https://user-images.githubusercontent.com/95220937/186770974-fd92ca68-029e-4c66-b9bc-ff27e0830f68.png)
+    ![Wishlist2](https://user-images.githubusercontent.com/95220937/186771040-68992f9b-e445-438b-8309-5ef8b16126c7.png)
     
   * Bag:
-    * Users can like the post by clicking on the icon of thumbs up.
+    * Users can add the products in the bag to buy it by clicking on the Add To Bag button showing in the products detail page.
+    ![Shopping-bag1](https://user-images.githubusercontent.com/95220937/186770138-5be222bf-f9e4-4639-827b-bca6eb4a3e31.png)
+    ![Shopping-bag2](https://user-images.githubusercontent.com/95220937/186770281-5b0d5e6a-f9a2-4c7c-9155-978e05567819.png)
+    ![Shopping-bag3](https://user-images.githubusercontent.com/95220937/186770410-67d4e4e4-6756-4683-9a24-58df345ce4f5.png)
      
-  * Checkout form:
-    * Users can comment on the post by writing in the body field showing.
+  * Checkout:
+    * Users can securily checkout for payment by clicking on the Secure Checkout button showing in the bag.
+    ![checkout1](https://user-images.githubusercontent.com/95220937/186772961-e4343454-01a5-43a1-8e5e-f576a576a696.png)
+    ![checkout2](https://user-images.githubusercontent.com/95220937/186773041-8aef4bac-9fa4-4472-9100-8bff20be61a6.png)
 
   * Profile:
-    * Users can edit or update the post by clicking on the edit button showing below 
-      the image of the post.
+    * Users can see the order history in his profile by clicking on the My Profile button showing in the dropdown list of My Account.
+    ![Profile](https://user-images.githubusercontent.com/95220937/186771553-3c13d8bb-1815-4f3c-af65-8f298b7dfad6.png)
     
   * Testimonials:
+    * Testimonials of our satisfied customers.
+    ![Testimonials](https://user-images.githubusercontent.com/95220937/186770536-6066ebb4-46c0-4a97-956d-f2b09be4a519.png)
 
   * Product Management:
-    
+    * Site owner can only add, edit and delete the products by clicking on the Product Management button showing in the dropdown list of My Account.
+    ![Management1](https://user-images.githubusercontent.com/95220937/186770765-a9323b6b-b5dd-4e6e-a578-2236a736fc0e.png)
+    ![Management2](https://user-images.githubusercontent.com/95220937/186770844-6c4f11ef-a6f5-4565-8641-b2354c3d6c5a.png)
+
   * Footer:
     * Footer displays the social link and services of the website.
+    ![Footer](https://user-images.githubusercontent.com/95220937/186770651-6367bbb6-7a60-4b55-b8d3-1f546ab52712.png)
       
    [Back to top](#)
 
@@ -101,7 +137,11 @@
 
 # Agile Technique:
   * Agile technique is used in this project. You can have a look here
-    [Agile]
+    [Agile](https://github.com/users/shahery/projects/6)
+  * Kanban board was used in this project to handle user stories
+    ![kanban board](https://user-images.githubusercontent.com/95220937/186760670-fc2b8943-94b6-4f7f-9eda-8c59b95246dc.png)
+  * User stories were created for following the agile technique
+    ![User Stories](https://user-images.githubusercontent.com/95220937/186761242-bda326c5-e19a-470a-8ff2-6df4cfec6fbc.png)
 
  ## Features left to implement
 
@@ -179,6 +219,8 @@
    * pinax-testimonials were used in the project [pinax-testimonial](https://github.com/pinax/pinax-testimonials)
 
  ## Media
+   * Products pictures were taken from sports direct [Sports Direct](https://www.sportsdirect.com/)
+   * Main page background image was taken from pexels [pexels](https://www.pexels.com/)
 
 
  ## Acknowledgements
