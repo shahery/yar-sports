@@ -42,6 +42,30 @@
 
   [Back to top](#)
 
+# Wireframes
+  * Wireframes were created for this project using the balsamiq for project planning and design purposes.
+  * Main Page Desktop:
+  ![Main-page-desktop](https://user-images.githubusercontent.com/95220937/186997091-8a405002-f9ff-4ab9-805e-460262eb2448.png)
+  * Sign Up:
+
+    <img width="606" alt="Sign Up" src="https://user-images.githubusercontent.com/95220937/186997170-0f5c6c29-1449-45f5-bb91-471bb2677974.png">
+  * Sign In:
+
+    <img width="603" alt="Sign In" src="https://user-images.githubusercontent.com/95220937/186997312-94c00786-a2a5-47b3-b8fb-f72eee607ae4.png">
+  * Products:
+    ![Products](https://user-images.githubusercontent.com/95220937/186997425-25d5fabb-aac8-46a9-a640-f52f5048d0f3.png)
+  * Product Detail Page:
+    ![Product-detail page](https://user-images.githubusercontent.com/95220937/186997530-bc2aa484-4040-4dd9-ae56-27d9ea9af522.png)
+  * Wishlist:
+    ![Wishlist](https://user-images.githubusercontent.com/95220937/186997593-6dd303bd-015f-4597-bc78-4293ab3d3b37.png)
+  * Bag:
+    ![Bag](https://user-images.githubusercontent.com/95220937/186997668-3b8ca8d5-09d0-474c-889d-6c6971bbad87.png)
+  * Product Management:
+    ![Product-management](https://user-images.githubusercontent.com/95220937/186997713-aa07ab3b-3c00-4a7d-989d-8f57e54b22b1.png)
+  * My Profile:
+    ![My-profile](https://user-images.githubusercontent.com/95220937/186997813-6fc4273a-e2fa-4e6f-beb8-e29beedbe0e3.png)
+
+
 # Existing Features
   * Navbar:
     * Users can sign up and login using the dropdown menu(My Account) showing on the navbar and also can add the products
