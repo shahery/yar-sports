@@ -24,6 +24,14 @@ body {
     margin-left: 0%;
 }
 
+.heading {
+    margin-top: 120px !important;
+}
+
+.shop-now-button{
+    margin-bottom: 150px !important;
+}
+
 /* for wishlist */
 
 .display {
@@ -42,10 +50,9 @@ body {
 /* for testimonial */
 
 .background {
-    height: calc(50vh - 164px);
     color: #555;
     font-family: 'Lato';
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .img-text {
@@ -325,8 +332,8 @@ a.category-badge > span.badge:hover {
 
 .footer {
     background-color: #0072b1;
-    bottom: 0 !important;
-    height: calc(32vh - 164px);
+    margin-top: 10px;
+    width: auto !important;
 }
 
 .fa-facebook-square {
@@ -335,16 +342,24 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-.space-footer {
-    margin-bottom: 55px;
-}
-
 .move-center {
     margin-left: 35% !important;
 }
 
 .move-right {
-    margin-right: 3% !important;
+    float: right !important;
+    margin-right: 20px !important;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+   
+main {
+    flex-grow: 1;
 }
 
 /* -------------------------------- Media Queries */
@@ -416,4 +431,27 @@ a.category-badge > span.badge:hover {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .heading {
+        margin-top: 180px !important;
+    }
+
+    .shop-now-button {
+        margin-bottom: 220px !important;
+    }
 }
+
+/* Fix footer text and social link on small screens */
+@media (max-width: 900px) {
+    .move-center {
+      float: left;
+      margin-left: 20px !important;
+    }
+  }
+
+/* Fix main image on medium and small screens */
+@media (max-width: 768px) {
+    .div-mobile-space {
+      margin-bottom: 30px !important;
+    }
+  }

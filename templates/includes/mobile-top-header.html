@@ -40,6 +40,14 @@
         {% endif %}
     </div>
 </li>
+{% if request.user.is_authenticated %}
+    <li class="list-inline-item">
+        <a class="text-info font-weight-bold text-blue nav-link text-center d-block d-lg-none" href="{% url 'wishlist' %}">
+            <div><i class="fas fa-heart"></i><span class="small size">{{ wish_count }}</span></div>
+            <span>WishList</span>
+        </a>
+    </li>
+{% endif %}
 <li class="list-inline-item">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-blue{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
         <div class="text-center">

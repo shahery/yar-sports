@@ -151,27 +151,24 @@
 
     {% block page_header %}
     {% endblock %}
-
+    
+    <main>
     {% block content %}
     {% endblock %}
+    </main>
 
     {% block testimonials %}
     {% endblock %}
+
+    <footer class="footer py-3">
+        <p class="m-0 text-center move-center text-white list-inline-item">Yar Sports are best in providing good quality sports equipments<br>All rights reserved<i class="fa fa-copyright" aria-hidden="true"></i></p>
+        <p class="m-0 text-center move-right text-white list-inline-item">Follow us on:<br><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="visits my facebook page(open in a new tab)"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
+    </footer>
 
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
-
   </body>
-  <div class="header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-  </div>
-  <footer class="footer mt-auto py-3 navbar fixed-bottom">
-     <p class="m-0 text-center move-center text-white">Yar Sports are best in providing good quality sports equipments<br>All rights reserved<i class="fa fa-copyright" aria-hidden="true"></i></p>
-     <p class="m-0 text-center move-right text-white">Follow us on:<br><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="visits my facebook page(open in a new tab)"></a><i class="fa fa-facebook-square" aria-hidden="true"></i></p>
-  </footer>
 </html>
