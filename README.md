@@ -44,8 +44,13 @@
 
 # Wireframes
   * Wireframes were created for this project using the balsamiq for project planning and design purposes.
+  * Website ux could be little bit different because wireframes were created earlier.
   * Main Page Desktop:
   ![Main-page-desktop](https://user-images.githubusercontent.com/95220937/186997091-8a405002-f9ff-4ab9-805e-460262eb2448.png)
+  * Main Page Mobile:
+
+  ![Main-page-mobile1](https://user-images.githubusercontent.com/95220937/187291078-3013187a-2665-431f-8f2b-1356aea5717f.png)
+  ![Main-page-mobile2](https://user-images.githubusercontent.com/95220937/187292079-5868e422-383d-4b90-881e-51e8e6ea9715.png)
   * Sign Up:
 
     <img width="606" alt="Sign Up" src="https://user-images.githubusercontent.com/95220937/186997170-0f5c6c29-1449-45f5-bb91-471bb2677974.png">
