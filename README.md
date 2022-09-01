@@ -180,6 +180,11 @@
   * automated tests for python and javascript were undertaken to check the functioning of the codes and it were all passed.
   ![Python-test]
   ![js-test]
+  * Flake8:
+  * Almost 54 errors were removed according to the requirements of flake8
+  * There are still few errors remaining like pylint error and line too long errors in few files like migrations and settings.py etc,
+   I think most of them are auto created lines so adjusting these lines could create the problems in website.
+   ![flake8-correction](https://user-images.githubusercontent.com/95220937/188011428-94e3ab3f-519d-492b-a5ea-ed004cf652c9.png)
 
  ## Validator Testing
    I have manually tested this project by doing the following:
