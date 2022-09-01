@@ -168,9 +168,15 @@
   * Agile technique is used in this project. You can have a look here
     [Agile](https://github.com/users/shahery/projects/6)
   * Kanban board was used in this project to handle user stories
+
     ![kanban board](https://user-images.githubusercontent.com/95220937/186760670-fc2b8943-94b6-4f7f-9eda-8c59b95246dc.png)
   * User stories were created for following the agile technique
+
     ![User Stories](https://user-images.githubusercontent.com/95220937/186761242-bda326c5-e19a-470a-8ff2-6df4cfec6fbc.png)
+
+  * MOSCOW method was used to prioritize the task using the label of MustHave, ShouldHave, CouldHave and WontHave.
+
+  ![moscow](https://user-images.githubusercontent.com/95220937/188017139-7b20de7e-fb1e-4e21-bfa5-710354286813.png)
 
  ## Features left to implement
 
