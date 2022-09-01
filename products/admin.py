@@ -1,7 +1,11 @@
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
 from django.contrib import admin
 from .models import Product, Category, Comment
 
 # Register your models here.
+
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
@@ -15,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
@@ -25,6 +30,7 @@ class CategoryAdmin(admin.ModelAdmin):
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('name', 'content', 'product', 'created_on')
     search_fields = ('name', 'content')
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)

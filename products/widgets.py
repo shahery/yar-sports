@@ -1,3 +1,6 @@
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
 from django.forms.widgets import ClearableFileInput
 from django.utils.translation import gettext_lazy as _
 

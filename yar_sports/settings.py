@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'profiles',
     'wishlist',
 
-    #other
+    # other
     'crispy_forms',
     'testimonials',
 ]
@@ -79,7 +79,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',

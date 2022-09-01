@@ -1,3 +1,6 @@
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
 from django.test import TestCase
 
 from ..models import Testimonial
@@ -39,7 +42,8 @@ class TestTags(TestCase):
         Ensure tag returns all active testimonials.
         """
         testimonials = random_testimonials_tag(3)
-        self.assertSetEqual(set(testimonials), {self.first, self.second, self.third})
+        self.assertSetEqual(set(testimonials),
+                            {self.first, self.second, self.third})
 
     def test_random_testimonial(self):
         """
@@ -53,7 +57,9 @@ class TestTags(TestCase):
         Ensure tag returns all active testimonials in reverse creation order.
         """
         testimonials = testimonials_tag(3)
-        self.assertSequenceEqual(testimonials, [self.third, self.second, self.first])
+        self.assertSequenceEqual(testimonials,
+                                 [self.third, self.second, self.first])
 
         testimonials = testimonials_tag()
-        self.assertSequenceEqual(testimonials, [self.third, self.second, self.first])
+        self.assertSequenceEqual(testimonials,
+                                 [self.third, self.second, self.first])

@@ -1,18 +1,21 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
+import json
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
+import stripe
+from bag.contexts import bag_contents
+from profiles.forms import UserProfileForm
+from profiles.models import UserProfile
+from products.models import Product
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-
-from products.models import Product
-from profiles.models import UserProfile
-from profiles.forms import UserProfileForm
-from bag.contexts import bag_contents
-
-import stripe
-import json
 
 
 @require_POST
@@ -106,7 +109,8 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+        # Attempt to prefill the form with any info the user maintains
+        # in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)

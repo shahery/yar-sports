@@ -1,11 +1,14 @@
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
 from django.conf import settings
 from django.http import HttpResponse
 from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
 
+import stripe
 from checkout.webhook_handler import StripeWH_Handler
 
-import stripe
 
 @require_POST
 @csrf_exempt
@@ -22,7 +25,7 @@ def webhook(request):
 
     try:
         event = stripe.Webhook.construct_event(
-        payload, sig_header, wh_secret
+             payload, sig_header, wh_secret
         )
     except ValueError as e:
         # Invalid payload
