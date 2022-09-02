@@ -32,39 +32,35 @@
         <div class="row h-50">
             <div class="col-md-12 mb-3">
                 <div class="carousel slide" data-ride="carousel" id="my-slider">
-                    <!-- <ol class="carousel-indicators">
-                        <li class="active" data-slide-to="0" data-target="#my-slider"></li>
-                        <li data-slide-to="1" data-target="#my-slider"></li>
-                    </ol> -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <div class="row">
                                 <div class="col-md-4 div-mobile-space">
-                                    <span class="img-text">
+                                    <div class="img-text">
                                         {% testimonials 1 as quotes %}
                                         {% for quote in quotes %}
                                         <h2><i class="fa fa-user-circle" aria-hidden="true"></i> {{quote.author}}</h2>
                                         <p><i class="fa fa-quote-left" aria-hidden="true"></i> {{quote.text}}</p>
                                         {% endfor %}
-                                    </span>
+                                    </div>
                                 </div>
                                 <div class="col-md-4 div-mobile-space">
-                                    <span class="img-text">
+                                    <div class="img-text">
                                         {% random_testimonials 1 as quotes %}
                                         {% for quote in quotes %}
                                         <h2><i class="fa fa-user-circle" aria-hidden="true"></i> {{quote.author}}</h2>
                                         <p><i class="fa fa-quote-left" aria-hidden="true"></i> {{quote.text}}</p>
                                         {% endfor %}
-                                    </span>
+                                    </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <span class="img-text">
+                                    <div class="img-text">
                                         {% random_testimonials 1 as quotes %}
                                         {% for quote in quotes %}
                                         <h2><i class="fa fa-user-circle" aria-hidden="true"></i> {{quote.author}}</h2>
                                         <p><i class="fa fa-quote-left" aria-hidden="true"></i> {{quote.text}}</p>
                                         {% endfor %}
-                                    </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

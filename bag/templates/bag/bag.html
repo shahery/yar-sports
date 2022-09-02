@@ -20,7 +20,6 @@
                 <hr>
             </div>
         </div>
-
         <div class="row">
             <div class="col">
                 {% if bag_items %}
@@ -71,7 +70,6 @@
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
-
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
@@ -178,12 +176,12 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
         form.submit();
-    })
+    });
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
@@ -197,6 +195,6 @@
          .done(function() {
              location.reload();
          });
-    })
+    });
 </script>
 {% endblock %}

@@ -448,11 +448,11 @@ main {
       float: left;
       margin-left: 20px !important;
     }
-  }
+}
 
 /* Fix main image on medium and small screens */
 @media (max-width: 768px) {
     .div-mobile-space {
       margin-bottom: 30px !important;
     }
-  }
+}

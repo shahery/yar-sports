@@ -1,4 +1,4 @@
-<li class="list-inline-item">
+<div class="list-inline-item">
     <a class="text-blue nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-search fa-lg"></i></div>
@@ -19,8 +19,8 @@
             </div>
         </form>
     </div>
-</li>
-<li class="list-inline-item dropdown">
+</div>
+<div class="list-inline-item dropdown">
     <a class="text-blue nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-user fa-lg"></i></div>
@@ -39,16 +39,16 @@
             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
         {% endif %}
     </div>
-</li>
+</div>
 {% if request.user.is_authenticated %}
-    <li class="list-inline-item">
+    <div class="list-inline-item">
         <a class="text-info font-weight-bold text-blue nav-link text-center d-block d-lg-none" href="{% url 'wishlist' %}">
             <div><i class="fas fa-heart"></i><span class="small size">{{ wish_count }}</span></div>
             <span>WishList</span>
         </a>
-    </li>
+    </div>
 {% endif %}
-<li class="list-inline-item">
+<div class="list-inline-item">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-blue{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
         <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -61,4 +61,4 @@
             </p>
         </div>
     </a>
-</li>
+</div>
