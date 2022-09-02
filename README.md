@@ -171,9 +171,6 @@
 
     ![kanban board](https://user-images.githubusercontent.com/95220937/186760670-fc2b8943-94b6-4f7f-9eda-8c59b95246dc.png)
   * User stories were created for following the agile technique
-
-    ![User Stories](https://user-images.githubusercontent.com/95220937/186761242-bda326c5-e19a-470a-8ff2-6df4cfec6fbc.png)
-
   * MOSCOW method was used to prioritize the task using the label of MustHave, ShouldHave, CouldHave and WontHave.
 
   ![moscow](https://user-images.githubusercontent.com/95220937/188017139-7b20de7e-fb1e-4e21-bfa5-710354286813.png)
@@ -199,10 +196,13 @@
      * No errors were returned from [PEP8 checker](http://pep8online.com/)
    * Html checker:
      * No errors were returned from [W3C Html](https://validator.w3.org/)
+     ![W3C-html](https://user-images.githubusercontent.com/95220937/188236076-f33a76f2-90cc-46ef-baea-eb45e6bad4e9.png)
    * CSS checker:
      * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
+     ![W3C-css](https://user-images.githubusercontent.com/95220937/188236184-f77fe079-9740-4d2b-ba74-4c599f053d55.png)
    * JS checker:
      * No errors were returned from [JS HINT](https://jshint.com/)
+     ![js-hint1](https://user-images.githubusercontent.com/95220937/188236336-44e6f5ad-dd65-4c59-aeb3-ef058f7114de.png)
 
    * Accessiblity:
      * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
