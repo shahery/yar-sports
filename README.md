@@ -181,19 +181,18 @@
 # Testing
  ## Python and Javascript Testing:
   * automated tests for python and javascript were undertaken to check the functioning of the codes and it were all passed.
-  ![Python-test]
+  ![python-testing](https://user-images.githubusercontent.com/95220937/188289408-6ff3c8e0-b330-4ca2-99ea-67d2b819c85c.png)
   ![js-test]
-  * Flake8:
-  * Almost 54 errors were removed according to the requirements of flake8
-  * There are still few errors remaining like pylint error and line too long errors in few files like migrations and settings.py etc,
-   I think most of them are auto created lines so adjusting these lines could create the problems in website.
+  * PEP8:
+    * Almost 54 errors were removed to meet the requirements of PEP8 style guidlines. This was done within the terminal console
+  using the command python3 -m flake8, which displayed the errors and warnings within the code.
+    * There are still few errors remaining like pylint error and line too long errors in few files like migrations and settings.py etc,
+    most of these errors are auto created lines so adjusting these lines could create the problems in website.
    ![flake8-correction](https://user-images.githubusercontent.com/95220937/188011428-94e3ab3f-519d-492b-a5ea-ed004cf652c9.png)
 
  ## Validator Testing
    I have manually tested this project by doing the following:
-   * Passed the code through a PEP8 linter and confirmed there are no problems
-   * PEP8
-     * No errors were returned from [PEP8 checker](http://pep8online.com/)
+   * Passed the code through different validator checker and confirmed that there are no problems
    * Html checker:
      * No errors were returned from [W3C Html](https://validator.w3.org/)
      ![W3C-html](https://user-images.githubusercontent.com/95220937/188236076-f33a76f2-90cc-46ef-baea-eb45e6bad4e9.png)
