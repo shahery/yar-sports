@@ -2,6 +2,7 @@
 # pylint: disable=missing-class-docstring
 # pylint: disable=missing-function-docstring
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -37,6 +38,7 @@ class Product(models.Model):
 
 
 class Comment(models.Model):
+    user = models.ForeignKey(User, null=True, on_delete=models.SET_NULL)
     product = models.ForeignKey(Product, on_delete=models.CASCADE,
                                 related_name="comments")
     rating = models.FloatField(null=False, blank=False, default=True)

@@ -7,9 +7,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
-from .forms import CommentForm
+from .models import Product, Category, Comment
+from .forms import ProductForm, CommentForm
 
 # Create your views here.
 
@@ -156,4 +155,19 @@ def delete_product(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
+    return redirect(reverse('products'))
+
+
+def delete_product_review(request, comment_id):
+    '''
+    Deletes the review from the product
+    '''
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can delete reviews')
+        return redirect(reverse('home'))
+
+    review = get_object_or_404(Comment, pk=comment_id)
+    review.delete()
+    messages.success(request, 'Review has been deleted!')
+
     return redirect(reverse('products'))

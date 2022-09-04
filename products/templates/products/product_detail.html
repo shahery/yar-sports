@@ -135,6 +135,11 @@
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.content | linebreaks }}
+                    {% if request.user.is_superuser %}
+                    <small class="ml-0">
+                        <a class="text-danger" href="{% url 'delete_product_review' comment.id %}">Delete</a>
+                    </small>
+                    {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
