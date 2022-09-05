@@ -167,22 +167,24 @@
 # Agile Technique:
   * Agile technique is used in this project. You can have a look here
     [Agile](https://github.com/users/shahery/projects/6)
-  * Kanban board was used in this project to handle user stories
+  * Kanban board was used in this project to handle user stories.
 
     ![kanban board](https://user-images.githubusercontent.com/95220937/186760670-fc2b8943-94b6-4f7f-9eda-8c59b95246dc.png)
   * User stories were created for following the agile technique
   * MOSCOW method was used to prioritize the task using the label of MustHave, ShouldHave, CouldHave and WontHave.
 
   ![moscow](https://user-images.githubusercontent.com/95220937/188017139-7b20de7e-fb1e-4e21-bfa5-710354286813.png)
+  * Milestones were created for the tasks to complete.
+
+  ![milestone](https://user-images.githubusercontent.com/95220937/188512675-6b692897-65e5-4fe7-aa5a-79912c2ec648.png)
 
  ## Features left to implement
 
   
 # Testing
- ## Python and Javascript Testing:
-  * automated tests for python and javascript were undertaken to check the functioning of the codes and it were all passed.
+ ## Python Testing:
+  * automated tests for python were undertaken to check the functioning of the codes and it were all passed.
   ![python-testing](https://user-images.githubusercontent.com/95220937/188289408-6ff3c8e0-b330-4ca2-99ea-67d2b819c85c.png)
-  ![js-test]
   * PEP8:
     * Almost 54 errors were removed to meet the requirements of PEP8 style guidlines. This was done within the terminal console
   using the command python3 -m flake8, which displayed the errors and warnings within the code.
