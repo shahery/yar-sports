@@ -116,56 +116,57 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-8 card mb-4 middle mt-3">
-            {% if user.is_authenticated %}
-            <h3 class="text-blue">Reviews:</h3>
-            <div class="card-body">
-                <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
-                {% for comment in comments %}
-                <div class="comments" style="padding: 10px;">
-                    <p class="font-weight-bold">
-                        <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
-                        {{ comment.name }}
-                        <span class=" text-muted font-weight-normal">
-                            <!-- The comment's created date goes here -->
-                            {{ comment.created_on }}
-                        </span> wrote:
-                    </p>
-                    <!-- The body of the comment goes before the | -->
-                    {{ comment.content | linebreaks }}
-                    {% if request.user.is_superuser %}
-                    <small class="ml-0">
-                        <a class="text-danger" href="{% url 'delete_product_review' comment.id %}">Delete</a>
-                    </small>
+        <div class="row">
+            <div class="col-12 col-md-8 card mb-4 middle mt-3">
+                {% if user.is_authenticated %}
+                <h3 class="text-blue">Reviews:</h3>
+                <div class="card-body">
+                    <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
+                    {% for comment in comments %}
+                    <div class="comments" style="padding: 10px;">
+                        <p class="font-weight-bold">
+                            <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
+                            {{ comment.name }}
+                            <span class=" text-muted font-weight-normal">
+                                <!-- The comment's created date goes here -->
+                                {{ comment.created_on }}
+                            </span> wrote:
+                        </p>
+                        <!-- The body of the comment goes before the | -->
+                        {{ comment.content | linebreaks }}
+                        {% if request.user.is_superuser %}
+                        <small class="ml-0">
+                            <a class="text-danger" href="{% url 'delete_product_review' comment.id %}">Delete</a>
+                        </small>
+                        {% endif %}
+                    </div>
+                    <!-- Our for loop ends here -->
+                    {% endfor %}
                     {% endif %}
                 </div>
-                <!-- Our for loop ends here -->
-                {% endfor %}
-                {% endif %}
             </div>
-        </div>
-        <div class="col-12 col-md-4 card mb-4  mt-3">
-            <div class="card-body">
-                <!-- For later -->
-                {% if user.is_authenticated %}
-                <h3 class="text-blue">Leave a review:</h3>
-                <p>Posting as: {{ user.username }}</p>
-                <form method="post" style="margin-top: 1.3em;">
-                    {{ comment_form | crispy }}
-                    {% csrf_token %}
-                    <button type="submit" class="btn btn-blue btn-lg space-footer">Submit</button>
-                </form>
-                {% else %}
-                <div class="middle">
-                    <h1 class="text-blue">Add a review</h1>
-                    <p>To leave a review on the product<br>
-                        please <a href="{% url 'account_login' %}">sign in</a> first.</p>
+            <div class="col-12 col-md-4 card mb-4  mt-3">
+                <div class="card-body">
+                    <!-- For later -->
+                    {% if user.is_authenticated %}
+                    <h3 class="text-blue">Leave a review:</h3>
+                    <p>Posting as: {{ user.username }}</p>
+                    <form method="post" style="margin-top: 1.3em;">
+                        {{ comment_form | crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-blue btn-lg space-footer">Submit</button>
+                    </form>
+                    {% else %}
+                    <div class="middle">
+                        <h1 class="text-blue">Add a review</h1>
+                        <p>To leave a review on the product<br>
+                            please <a href="{% url 'account_login' %}">sign in</a> first.</p>
+                    </div>
+                    {% endif %}
                 </div>
-                {% endif %}
             </div>
         </div>
+    </div>
 {% endblock %}
 
 {% block postloadjs %}

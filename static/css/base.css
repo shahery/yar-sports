@@ -110,7 +110,7 @@ body {
     background: #0072b1;
     color: white;
     min-width: 260px;
-    margin-left: 60%;
+    margin-left: 50%;
 }
 
 .btn-blue {
@@ -454,5 +454,16 @@ main {
 @media (max-width: 768px) {
     .div-mobile-space {
       margin-bottom: 30px !important;
+    }
+
+    .shop-now-button {
+        margin-left: 40% !important;
+    }
+}
+
+/* Fix the footer on small screens */
+@media (max-width: 300px) {
+    .shop-now-button {
+        margin-left: 0 !important;
     }
 }
