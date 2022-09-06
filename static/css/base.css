@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/background-image.jpg') no-repeat center center fixed;
+    background: url('/media/background-image1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -23,14 +23,6 @@ body {
 
 .center {
     margin-left: 0%;
-}
-
-.heading {
-    margin-top: 120px !important;
-}
-
-.shop-now-button{
-    margin-bottom: 150px !important;
 }
 
 /* for wishlist */
@@ -110,7 +102,9 @@ body {
     background: #0072b1;
     color: white;
     min-width: 260px;
-    margin-left: 50%;
+    margin-left: 65%;
+    margin-bottom: 220px !important;
+    margin-top: 250px !important;
 }
 
 .btn-blue {
@@ -433,10 +427,6 @@ main {
         padding: .25rem .5rem !important;
     }
 
-    .heading {
-        margin-top: 180px !important;
-    }
-
     .shop-now-button {
         margin-bottom: 220px !important;
     }
@@ -465,5 +455,12 @@ main {
 @media (max-width: 300px) {
     .shop-now-button {
         margin-left: 0 !important;
+    }
+}
+
+/* Fix the explore products button on small screens */
+@media (max-width: 420px) {
+    .shop-now-button {
+        margin-bottom: 370px !important;
     }
 }
