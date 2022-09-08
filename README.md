@@ -31,15 +31,30 @@
   * [Credits](#credits)
 
 # Users stories:
-  * As a user I can search the products to find it easily
-  * As a user I can easily create the account to use all the functionalities of the website
-  * As a user I can add the products in the wishlist to buy it later
-  * As a user I can add the products in the bag to buy it
-  * As a user I can see the subtotal of my shopping, so not to buy out of my budget
-  * As a user I can leave the review on the products
-  * As a user I can view the order history of my products in my profile
-  * As a user I can securily checkout for payments in the website
-  * As a user I can see the testimonials of satisfied customers in the website
+  * Viewing and Navigation:
+  
+   ![Viewing](https://user-images.githubusercontent.com/95220937/189090953-72098ca4-72e0-4f7d-97d7-4c1dcc8fc803.png)
+  * Registration and User Accounts:
+
+   ![Registration](https://user-images.githubusercontent.com/95220937/189092573-1e257f04-3877-4aa6-bd62-b6631ef487d6.png)
+  * Sorting and Searching:
+
+   ![Sorting](https://user-images.githubusercontent.com/95220937/189092670-1bd7d0c4-36f3-4556-8901-7b36472b07b6.png)
+  * Purchasing and Checkout:
+
+   ![Purchasing](https://user-images.githubusercontent.com/95220937/189092761-59c801af-58f6-407a-bea3-53599889d86a.png)
+  * Admin and Store Management:
+
+   ![Admin](https://user-images.githubusercontent.com/95220937/189092867-35e91cb9-43bb-47b0-a4ce-88380c6dd23e.png)
+  * Review on the Product:
+
+   ![Review-product](https://user-images.githubusercontent.com/95220937/189092940-a92a74c1-684b-4c7b-950e-60bcb3c6db78.png)
+  * Add to Wishlist:
+
+   ![Add-to-wishlist](https://user-images.githubusercontent.com/95220937/189093028-ce7247ff-d5a8-447b-829a-19e4349a521c.png)
+  * Add Testimonial:
+
+   ![Add-testimonial](https://user-images.githubusercontent.com/95220937/189093092-e3b619ee-b4d4-44b4-816c-cf105680616d.png)
  												
 
   [Back to top](#)
