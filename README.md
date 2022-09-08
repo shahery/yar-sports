@@ -306,15 +306,15 @@
  ## Search Engine Optimization:
  * The site was optimized by careful selection of keywords. The following steps were taken to do this:
 
- * The entire keywords consists of important relevant topics based upon my initial understanding of the business.
+ * The entire table keywords consists of important relevant topics based upon my initial understanding of the business.
  * Using these topics a 'brain dump' of keywords was made orientated around common topics and themes within the business.
  * Topics and keywords were then tried out on Google and the relevant suggestions it gave were added to the keyword list.
- * Words crossed out in red were removed due to too having too much competition using Wordtracker.
- * Words crossed out in blue were removed due to the lack of relevance and not being specific to the site.
- * Words in Yellow denote the sites "Short Tail Keywords"
- * Words in Green denote the sites Long Tail Keywords"
- * Entire keywords are below
-   * Cricket equipment shop london
+ * Words crossed out were removed due to the lack of relevance and not being specific to the site
+   and also having too much competition using [Wordtracker](https://www.wordtracker.com/).
+ * Words in blue denote the sites "Short Tail Keywords"
+ * Words in Green denote the sites "Long Tail Keywords"
+
+  ![SEO](https://user-images.githubusercontent.com/95220937/189165860-07ddd0c8-fc90-4e67-ad86-813d7fff3743.png)
 
  * An example of how these words were used throughout the site can be seen below in the screenshot found on the websites homepage:
 
