@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
-                <h2 class="logo-font mb-4">Contact us</h2>
+                <h2 class="logo-font mb-4">Get Qoute</h2>
                 <hr>
             </div>
         </div>
@@ -23,7 +23,13 @@
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'contact_view' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ form | crispy }}
+                    {% for field in form %}
+                        {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                    {% endfor %}
                     <div class="text-right">
                         <a class="btn btn-outline-blue rounded-0" href="{% url 'home' %}">Cancel</a>
                         <button class="btn btn-blue rounded-0" type="submit">Submit</button>
@@ -32,4 +38,14 @@
             </div>            
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('#new-image').change(function() {
+            var file = $('#new-image')[0].files[0];
+            $('#filename').text(`Image will be set to: ${file.name}`);
+        });
+    </script>
 {% endblock %}

@@ -140,6 +140,14 @@ body {
     background: #0072b1 !important;
 }
 
+.gold {
+    background: gold !important;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
 .text-black {
     color: black;
 }

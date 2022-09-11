@@ -1,11 +1,15 @@
 # pylint: disable=missing-module-docstring
 # pylint: disable=missing-class-docstring
 # pylint: disable=missing-function-docstring
-from django.forms import ModelForm
+from django import forms
+from .widgets import CustomClearableFileInput
 from .models import Contact
 
 
-class ContactForm(ModelForm):
+class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
-        fields = ('name', 'email', 'subject',)
+        fields = '__all__'
+
+    image = forms.ImageField(label='Image',
+                             required=False, widget=CustomClearableFileInput)

@@ -1,19 +1,31 @@
-from django.shortcuts import render
-from .models import Contact
-from django.http import HttpResponse
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from .forms import ContactForm
 
-# Create your views here.
 
+@login_required
 def contact_view(request):
 
-    if request.method == "POST":
-        contact = Contact()
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        subject = request.POST.get('subject')
-        contact.name = name
-        contact.email = email
-        contact.subject = subject
-        contact.save()
-        return HttpResponse("<h2>thanks</h2>")
-    return render(request, 'contact/contact_view.html')
+    if request.method == 'POST':
+        form = ContactForm(request.POST, request.FILES)
+        if form.is_valid():
+            contact = form.save()
+            messages.success(request, 'We have recieved your qoute request '
+                             'and we will get back to you soon!')
+            return redirect(reverse('home'))
+        else:
+            messages.error(request, 'Failed to add contact form.'
+                           'Please ensure the form is valid.')
+    else:
+        form = ContactForm()
+
+    template = 'contact/contact_view.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
