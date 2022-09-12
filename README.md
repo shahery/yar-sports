@@ -55,6 +55,9 @@
   * Add Testimonial:
 
    ![Add-testimonial](https://user-images.githubusercontent.com/95220937/189093092-e3b619ee-b4d4-44b4-816c-cf105680616d.png)
+  * Get a quote:
+
+   ![Get-quote](https://user-images.githubusercontent.com/95220937/189625121-a8ade141-e8d3-4524-b468-cd906552bd69.png)
  												
 
   [Back to top](#)
@@ -64,12 +67,12 @@
   * Website ux could be little bit different because wireframes were created earlier.
   * Main Page Desktop:
 
-  ![Main-page-desktop](https://user-images.githubusercontent.com/95220937/186997091-8a405002-f9ff-4ab9-805e-460262eb2448.png)
+    ![Main-page-desktop](https://user-images.githubusercontent.com/95220937/186997091-8a405002-f9ff-4ab9-805e-460262eb2448.png)
 
   * Main Page Mobile:
 
-  ![Main-page-mobile1](https://user-images.githubusercontent.com/95220937/187291078-3013187a-2665-431f-8f2b-1356aea5717f.png)
-  ![Main-page-mobile2](https://user-images.githubusercontent.com/95220937/187292079-5868e422-383d-4b90-881e-51e8e6ea9715.png)
+    ![Main-page-mobile1](https://user-images.githubusercontent.com/95220937/187291078-3013187a-2665-431f-8f2b-1356aea5717f.png)
+    ![Main-page-mobile2](https://user-images.githubusercontent.com/95220937/187292079-5868e422-383d-4b90-881e-51e8e6ea9715.png)
 
   * Sign Up:
 
@@ -102,6 +105,14 @@
   * My Profile:
 
     ![My-profile](https://user-images.githubusercontent.com/95220937/186997813-6fc4273a-e2fa-4e6f-beb8-e29beedbe0e3.png)
+
+  * Add Testimonial:
+
+    ![Testimonial](https://user-images.githubusercontent.com/95220937/189684987-72061136-e0f5-4aae-9f61-8af257c3b0e7.png)
+
+  * Get Quote:
+
+    <img width="431" alt="Quote" src="https://user-images.githubusercontent.com/95220937/189687799-0cf0d0f1-9d02-4274-9364-7462ec5b43b8.png">
 
 
 # Existing Features
@@ -193,6 +204,17 @@
     ![Management1](https://user-images.githubusercontent.com/95220937/186770765-a9323b6b-b5dd-4e6e-a578-2236a736fc0e.png)
     ![Management2](https://user-images.githubusercontent.com/95220937/186770844-6c4f11ef-a6f5-4565-8641-b2354c3d6c5a.png)
 
+  * Add Testimonial:
+    * Site users can add the testimonial for the website using this form below. Users can only add the testimonial by signing in to the website first.
+
+    ![add-testimonial](https://user-images.githubusercontent.com/95220937/189690945-bb0cd091-94f8-4d04-a6a8-54862085fc31.png)
+
+  * Get Quote:
+    * Site users can get the quote for the desired sports equipments by filling this form below and users can also upload the image of the sports equipment they want us to provide.
+
+    ![quote1](https://user-images.githubusercontent.com/95220937/189691615-fc082d23-1699-4885-a503-a89b02a45404.png)
+    ![quote2](https://user-images.githubusercontent.com/95220937/189691787-88d66557-aab9-408b-b2cb-4c2427dbc400.png)
+
   * Footer:
     * Footer displays the social link and services of the website.
 
@@ -214,18 +236,18 @@
    [Back to top](#)
 
 # Agile Technique:
-  * Agile technique is used in this project. You can have a look here
-    [Agile](https://github.com/users/shahery/projects/6)
+  * Agile technique is used in this project. You can have a look [here](https://github.com/users/shahery/projects/6)
+
   * Kanban board was used in this project to handle user stories.
 
-    ![kanban board](https://user-images.githubusercontent.com/95220937/186760670-fc2b8943-94b6-4f7f-9eda-8c59b95246dc.png)
+   ![agile](https://user-images.githubusercontent.com/95220937/189694810-849e8a8e-1570-46e1-9e47-c2a9ffb14fbf.png)
   * User stories were created for following the agile technique
   * MOSCOW method was used to prioritize the task using the label of MustHave, ShouldHave, CouldHave and WontHave.
 
-  ![moscow](https://user-images.githubusercontent.com/95220937/188017139-7b20de7e-fb1e-4e21-bfa5-710354286813.png)
+   ![moscow](https://user-images.githubusercontent.com/95220937/188017139-7b20de7e-fb1e-4e21-bfa5-710354286813.png)
   * Milestones were created for the tasks to complete.
 
-  ![milestone](https://user-images.githubusercontent.com/95220937/188512675-6b692897-65e5-4fe7-aa5a-79912c2ec648.png)
+   ![milestone](https://user-images.githubusercontent.com/95220937/188512675-6b692897-65e5-4fe7-aa5a-79912c2ec648.png)
 
  ## Features left to implement
 
@@ -253,7 +275,7 @@
    I have manually tested this project by doing the following:
    * Passed the code through different validator checker and confirmed that there are no problems
    * Html checker:
-     * No errors were returned from [W3C Html](https://validator.w3.org/)
+     * I have checked all the html templates throughout the website and no errors were returned from [W3C Html](https://validator.w3.org/)
 
      ![W3C-html](https://user-images.githubusercontent.com/95220937/188236076-f33a76f2-90cc-46ef-baea-eb45e6bad4e9.png)
    * CSS checker:
@@ -314,9 +336,12 @@
  * Words in blue denote the sites "Short Tail Keywords"
  * Words in Green denote the sites "Long Tail Keywords"
 
-  ![SEO](https://user-images.githubusercontent.com/95220937/189165860-07ddd0c8-fc90-4e67-ad86-813d7fff3743.png)
+   ![SEO](https://user-images.githubusercontent.com/95220937/189698385-972af2f6-b850-4db0-9010-624645b09f40.png)
 
  * An example of how these words were used throughout the site can be seen below in the screenshot found on the websites homepage:
+ 
+   ![seo-homepage](https://user-images.githubusercontent.com/95220937/189700493-78733ab1-7478-41df-b808-7cec287352ac.png)
+   ![seo-homepage1](https://user-images.githubusercontent.com/95220937/189700621-dce09fcb-6e17-49f7-9de2-835b7cec271b.png)
 
  ## SEO Implementations in HTML:
  * Words/phrases included within semantic HTML elements were optimized using the keywords above.
