@@ -127,7 +127,7 @@
                     <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}</h4>                
                 </div>            
             </div>
-            <div id="delivery-banner" class="row text-center">
+            <div class="row text-center">
                 <div class="col gold text-black">
                     <small class="logo-font my-1">
                         Did You know? YAR Sports store provides on demand sports equipments. Get a qoute <a href="{% url 'contact_view' %}" class="text-blue arrow">here</a>
@@ -158,8 +158,8 @@
         {% endblock %}
         
         <main>
-        {% block content %}
-        {% endblock %}
+            {% block content %}
+            {% endblock %}
         </main>
 
         {% block testimonials %}
