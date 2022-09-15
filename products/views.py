@@ -76,6 +76,7 @@ def product_detail(request, product_id):
         comment = comment_form.save(commit=False)
         comment.product = product
         comment.save()
+        messages.success(request, 'Successfully added review!')
     else:
         comment_form = CommentForm()
 

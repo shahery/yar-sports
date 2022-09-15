@@ -1,0 +1,11 @@
+<div class = "btn-group">
+    <a href="{% url 'product_detail' item.product.id %}">
+        <p class="btn btn-blue rounded-0 text-uppercase mt-5 mr-2">Shop Now</p>
+    </a>
+    <form class="form" action="{% url 'delete-from-wishlist' %}" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="item-id" value="{{ item.id }}">
+        <input type="submit" value="Remove from wishlist" class="btn btn-blue rounded-0 text-uppercase mt-5">
+    </form>
+</div>
+    
