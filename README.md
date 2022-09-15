@@ -26,7 +26,9 @@
   * [Bugs](#bugs)
   * [Database Schema](#database-schema)
   * [Marketing](#marketing)
+  * [Typography](#typography)
   * [Colour Schema](#colour-schema)
+  * [Favicon](#favicon)
   * [Deployment](#deployment)
   * [Credits](#credits)
 
@@ -277,7 +279,7 @@
    ![flake8-correction](https://user-images.githubusercontent.com/95220937/188011428-94e3ab3f-519d-492b-a5ea-ed004cf652c9.png)
 
  ## Automated python testing
-   * Automated tests for python were undertaken to check the functioning of the codes and it were all passed.Any testing that was not conducted using automated testing was done manually to ensure that site was fully functional upon deployment. Below is the screenshot 
+   Automated tests for python were undertaken to check the functioning of the codes and it were all passed.Any testing that was not conducted using automated testing was done manually to ensure that site was fully functional upon deployment. Below is the screenshot 
    of automated tests that were performed for all the apps using the code 'python3 manage.py test' and we can also test all the apps 
    one by one using the code 'python3 manage.py test appname'.
 
@@ -394,7 +396,7 @@
    * Alongside this functionality, the user stories for this project document what is required by the customers of this site.
 
  ## Social Media Platform:
- * Market research strategy was performed that needed to promote the YAR Sports website. Based on this and the target audience YAR Sports facebook business page was created for this purpose and it can be seen below:
+  Market research strategy was performed that needed to promote the YAR Sports website. Based on this and the target audience YAR Sports facebook business page was created for this purpose and it can be seen below:
 
 
  ## Search Engine Optimization:
@@ -457,9 +459,17 @@
 
   [Back to top](#)
 
+# Typography:
+ The purpose of the font was to create a phenomenol feel within the website. Moreover, text colours were mostly chosen either Cyan-blue or white and some other colours as well depending on the background contrast ratio, to ensure information was accessible to users who may be visually impaired. The main font used on the site was 'Lato' and 'Oswald, this was selected using [Google Fonts](https://fonts.google.com/).
+
 # Colour Schema:
-  * #555, #fff, #0072b1, red, green, blue, whitesmoke, black, #6c757d, #ffc107, #343a40, #aab7c4, #dc3545, combination 
+   #555, #fff, #0072b1, red, green, blue, whitesmoke, black, #6c757d, #ffc107, #343a40, #aab7c4, #dc3545, combination 
    of these colours were used in the website for foreground and background.
+
+# Favicon:
+  Favicon was generated for this project as can be seen below
+
+   ![favicon](https://user-images.githubusercontent.com/95220937/190364148-2a29e42a-d12a-4201-a05a-2976d3ca01e9.png)
 
   [Back to top](#)
 # Deployment:
@@ -484,7 +494,7 @@
   [Back to top](#)
 
 # Stripe Payments:
- * For handling payments within the website just make sure that you have set up a guide on how this can be done can be found [here](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details).
+  For handling payments within the website just make sure that you have set up a guide on how this can be done can be found [here](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details).
 
 # Credits
  ## Content
@@ -499,6 +509,6 @@
 
 
  ## Acknowledgements
-   * My mentor who guided me througout the project.
+   My mentor who guided me througout the project.
 
  [Back to top](#)
