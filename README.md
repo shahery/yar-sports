@@ -252,9 +252,10 @@
     ![milestone](https://user-images.githubusercontent.com/95220937/188512675-6b692897-65e5-4fe7-aa5a-79912c2ec648.png)
 
   * Acceptance Criteria:
-    * Each of the user stories was given acceptance criteria, an example of this can be seen below:
+  
+    Each of the user stories was given acceptance criteria, an example of this can be seen below:
     
-    ![Acceptance-criteria](https://user-images.githubusercontent.com/95220937/190271531-b926e9b1-1364-4567-a21e-51935438c3c9.png)
+    ![Acceptance-criteria](https://user-images.githubusercontent.com/95220937/190433399-c3c9a105-3df9-41ed-af43-50514702b57a.png)
 
    [Back to top](#)
 
