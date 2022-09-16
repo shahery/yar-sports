@@ -1,0 +1,1 @@
+web: gunicorn yar_sports.wsgi:application
