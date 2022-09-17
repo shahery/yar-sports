@@ -448,14 +448,30 @@
 
 
  ## Sitemap.xml:
+  The sitemap was made to list the websites important url's to make sure that search engine spiders are able to easily crawl through the site and understand its structure. This was made using XML-sitemaps.com using the following steps:
+
+  * Paste the URL of the deployed site into XML-sitemaps.
+  * Download the XML sitemap file.
+  * Drag and drop this file into the project root directory and ensure it is labelled sitemap.xml
 
 
  ## robots.txt:
+  The robots.txt file was created to tell the search engine spiders that where they are not to allowed to go on the site and increase the quality of the site and improving the SEO rating. The following steps were taken to create this file:
+
+  * File was added namely robots.txt.
+  * The following code is written into this file, adding in your personalised sitemap url:
+    * User-agent: *
+    * Disallow:
+    * Sitemap: YOUR_SITEMAP_URL
+  * The final steps for working with these two files requires a DNS certificate for a deployed custom domain. This project did not require a custom domain and so it has been temporarily left out.
 
 
  ## Mailchimp Email Subscription Service:
 
  ## Confirmation Emails:
+  After customers successful purchase, an automatic email containing all of their order confirmation details was sent to their emails they have given. An image of how this confirmation email looks like can be seen below:
+
+   ![Email-confirmation](https://user-images.githubusercontent.com/95220937/190845148-8266d276-e83b-4c25-89e9-46f78f3a5546.png)
   
 
   [Back to top](#)
@@ -474,23 +490,162 @@
 
   [Back to top](#)
 # Deployment:
- This project was deployed using the code institute's mock terminal for heroku.
-   * Steps for deployment:
-     * Create the env.py file, requirements.txt file and Procfile in the github for the
-       project you want to deploy
-     * Make it sure, you dont leave any empty newline in the Procfile
-     * Create a new heroku app
-     * Click on the resources in the heroku and add heroku postgres database for the project
-     * Heroku postgres will create the database_url in the config vars, just copy that and 
-       paste in the env.py file of your project in the github.
-     * If you are using the cloudinary for your project then you will have to copy
-       the cloudinary_url and paste in the env.py file same like database_url.
-     * In the config vars, you have to create the Port: 8000 and secret key for your project
-       and also copy and paste that secret key in env.py file of your project
-     * After all this done, click on the deploy tab and connect your repository you want to 
-       deploy with the heroku and click on the deploy branch
-     * Your project has been deployed now and you can see your project
-       clicking on the open app button.
+  ## Github:
+   * Creat a new GitHub repository page using the 'Code Institute Template'.
+   * Open the new repository by clicking on the 'Gitpod' button.
+   * Install the relevant apps and packages needed to deploy to HEROKU.
+
+  ## Django and Heroku:
+  Following steps were taken to deploy the project to Heroku from GitHub repository:
+
+   * Create Heroku App:
+     * Before creating the Heroku app make sure your project has the following files:
+       * requirements.txt to create this file, type the following within the terminal: pip3 freeze --local > requirements.txt.
+       * Procfile to create this file, type the following within the terminal: python run.py > Procfile.
+     * Select "Create new app" within Heroku.
+   * Attach the Postgres database:
+     * Search "Postgres" within the Resources tab and select the Heroku Postgres option.
+   * Create the settings.py file:
+     * In Heroku navigate to the Settings tab, click on Reveal Config Vars and copy the DATABASE_URL.
+     * Within the Gitpod workspace, create an env.py file within the main directory.
+     * Import the env.py file within the settings.py file.
+     * Add a SECRET_KEY value within the Reveal Config Vars in Heroku.
+     * Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file.
+     * Run the following command in your terminal python3 manage.py migrate.
+     * Add the following sections to your settings.py file:
+       STATICFILES_STORAGE
+       STATICFILES_LOCATION 
+       STATIC_URL
+       MEDIA_URL
+       DEFAULT_FILE_STORAGE
+       MEDIAFILES_LOCATION
+       TEMPLATES_DIR
+       Update DIRS in TEMPLATES with TEMPLATES_DIR
+       Update ALLOWED_HOSTS with ['app_name.heroku.com','localhost']
+   * Deploy to Heroku via CLI:
+     * Login to Heroku within the terminal window using heroku login -i
+     * Run the following command in the terminal window: heroku git:remote -a your_app_name_here, By doing this you will
+     link the app to your GidPod terminal.
+     * After linking the app you can deploy to Heroku by running the command git push heroku main.
+
+  ## AWS S3 Bucket Set Up:
+  This deployed site used AWS S3 Buckets to store the static and media files. The following steps to set up an AWS S3 Bucket are here below:
+
+  * Create an AWS account using this link [AWS](https://aws.amazon.com/).
+  * Login to your account and within the search bar type S3.
+  * Within the S3 page click on the button 'Create Bucket'.
+  * Name the bucket and select the region which is closest to you.
+  * Underneath Object Ownership select ACLs enabled.
+  * Uncheck Block Public Access and acknowledge that the bucket will be made public, then click Create Bucket.
+  * Inside the created bucket click on the Properties tab. Below Static Website Hosting click Edit and change the Static website hosting option to Enabled. Copy the default values for the index and error documents and click Save Changes.
+  * Click on the Permissions tab, below Cross-origin Resource Sharing (CORS), click Edit and then paste in the following code:
+
+    [
+        {
+            "AllowedHeaders": [
+            "Authorization"
+            ],
+            "AllowedMethods": [
+            "GET"
+            ],
+            "AllowedOrigins": [
+            "*"
+            ],
+            "ExposeHeaders": []
+        }
+    ]
+  * Within the Bucket Policy section. Click Edit and then Policy Generator. Click the Select Type of Policy dropdown and select S3 Bucket Policy and within Principle allow all principals by typing *.
+  * Within the Actions dropdown menu select Get Object and in the previous tab copy the Bucket ARN number. Paste this within the policy generator within the field labelled Amazon Resource Name (ARN).
+  * Click Add statement > Generate Policy and copy the policy that's been generated and paste this into the Bucket Policy Editor.
+  * Before saving, add /* at the end of your Resource Key, this will allow access to all resources within the bucket.
+  * Once saved, scroll down to the Access Control List (ACL) and click Edit.
+  * Next to Everyone (public access), check the list checkbox and save your changes.
+
+  ## IAM:
+  * Search for IAM within the AWS navigation bar and select it.
+  * Click User Groups that can be seen in the side bar and then click Create group and name the group 'manage-your-project-name'.
+  * Click Policies and then Create policy.
+  * Navigate to the JSON tab and click Import Managed Policy, within here search S3 and select AmazonS3FullAccess followed by Import.
+  * Navigate back to the recently created S3 bucket and copy your ARN Number. Go back to This Policy and update the Resource Key to include your ARN Number, and another line with your ARN followed by a /*. Below is an example of how this should look like:
+  
+  * {
+      "Version": "2012-10-17",
+      "Statement": [
+          {
+              "Effect": "Allow",
+              "Action": [
+                  "s3:*",
+                  "s3-object-lambda:*"
+              ],
+              "Resource": [
+                  "YOUR-ARN-NO.-HERE",
+                  "YOUR-ARN-NO.-HERE/*"
+              ]
+          }
+      ]
+    }
+  * Ensure that the policy has been given a name and a short description, then click Create Policy.
+  * Click User groups, and then the group you created earlier. Under permissions click Add Permission and from the dropdown click Attach Policies.
+  * Select Users from the sidebar and click Add User.
+  * Provide a username and check Programmatic Access, then click 'Next: Permissions'.
+  * Ensure your policy is selected and navigate through until you click Add User.
+  * Download the CSV file, which contains the user's access key and secret access key.
+  * Note: You must download and keep this file in a safe place because after closing, we cannot download this again.
+
+  ## Connecting AWS to Django:
+  * Within your terminal install the following packages by typing
+    * pip3 install boto3
+    * pip3 install django-storages 
+  * Freeze the requirements by typing
+    * pip3 freeze > requirements.txt
+  * Add storages to your installed apps within your settings.py file.
+  * At the bottom of the settings.py file add the following code:
+    * if 'USE_AWS' in os.environ:
+    * AWS_STORAGE_BUCKET_NAME = 'insert-your-bucket-name-here'
+    * AWS_S3_REGION_NAME = 'insert-your-region-here'
+    * AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    * AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+  * Add the following keys within Heroku: AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY. These can be found in your CSV file.
+  * Add the key USE_AWS, and set the value to True within Heroku.
+  * Remove the DISABLE_COLLECTSTAIC variable from Heroku.
+  * Within your settings.py file inside the code just written add:
+    * AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+  * Inside the settings.py file inside the bucket config if statement add the following lines of code:
+    * STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    * STATICFILES_LOCATION = 'static'
+    * DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    * MEDIAFILES_LOCATION = 'media'
+
+    * STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    * MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+    * AWS_S3_OBJECT_PARAMETERS = {
+      'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+      'CacheControl': 'max-age=94608000',
+      }
+  * In the root directory of your project create a file called custom_storages.py. Import the following at the top of this file and add the classes below:
+    * from django.conf import settings
+    * from storages.backends.s3boto3 import S3Boto3Storage
+
+    * class StaticStorage(S3Boto3Storage):
+    * location = settings.STATICFILES_LOCATION
+
+    * class MediaStorage(S3Boto3Storage):
+    * location = settings.MEDIAFILES_LOCATION
+  * Navigate back to you AWS S3 Bucket and click on Create Folder, name this folder media, within the media file click Upload > Add Files and select the images for your site.
+  * Under Permissions select the option Grant public-read access and click Upload.
+
+  ## Forking and Cloning the Repository:
+  * Log in to GitHub and locate the required GitHub repository.
+  * At the top of the Repository, above the "Settings" button, locate the button labelled "Fork".
+  * You should now have a copy of the original repository within your GitHub account.
+  * You can make changes to this new version whilst keeping the original version safe.
+  * For Cloning the Repository, Click the dropdown button labelled 'Code' above the file list.
+  * Copy the URL for the required repository.
+  * Open Git Bash on your device.
+  * Change the current working directory to the location where you want the cloned directory.
+  * Type git clone in the CLI and then paste the URL you copied earlier.
+  * Press Enter to create your local clone.
 
   [Back to top](#)
 
