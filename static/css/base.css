@@ -137,6 +137,14 @@ body {
     color: #0072b1 !important;
 }
 
+.text-new {
+    color: #0000FF !important;
+}
+
+.text-large {
+    font-size: 150% !important;
+}
+
 .border-blue {
     border: 1px solid #0072b1 !important;
 }
