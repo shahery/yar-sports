@@ -218,9 +218,9 @@
     ![quote2](https://user-images.githubusercontent.com/95220937/189691787-88d66557-aab9-408b-b2cb-4c2427dbc400.png)
 
   * Footer:
-    * Footer displays the social link and services of the website.
+    * Footer displays the newsletter signup, social link and privacy policy of the website.
 
-    ![Footer](https://user-images.githubusercontent.com/95220937/186770651-6367bbb6-7a60-4b55-b8d3-1f546ab52712.png)
+    ![Footer](https://user-images.githubusercontent.com/95220937/191116466-6598f595-33d1-4bf3-9692-24e771df70e4.png)
       
    [Back to top](#)
 
@@ -413,13 +413,12 @@
  * Words in blue denote the sites "Short Tail Keywords"
  * Words in Green denote the sites "Long Tail Keywords"
 
-   ![SEO-keywords](https://user-images.githubusercontent.com/95220937/190009259-ef89ff25-fe50-4c72-90dc-f7dcb808186c.png)
+   ![SEO](https://user-images.githubusercontent.com/95220937/191118293-c4dac982-3b34-4b9f-9ec0-63f3dd875668.png)
 
  * An example of how these words were used throughout the site can be seen below in the screenshot found on the websites homepage:
  
    ![SEO3](https://user-images.githubusercontent.com/95220937/190006470-c896c8aa-6a41-47e5-b8d1-7fc962bc9402.png)
    ![SEO2](https://user-images.githubusercontent.com/95220937/190006640-49d5ba22-8151-481b-93ac-ebeae4c54c70.png)
-   ![SEO1](https://user-images.githubusercontent.com/95220937/190006693-03e4db53-8366-496f-98bd-6c1610ae4d3a.png)
 
  ## SEO Implementations in HTML:
  * Words/phrases included within semantic HTML elements were optimized using the keywords above.
@@ -469,6 +468,9 @@
 
 
  ## Mailchimp Email Subscription Service:
+   Users are encouraged to signup for our newsletters and information about the sports equipments sold at Yar Sports. The email subscription service is ran through Mailchimp, allowing shop owners to send marketing emails through the platform, increasing engagement within the site. Below is a screenshot of mailchimp form where users can signup.
+
+   ![mailchimp](https://user-images.githubusercontent.com/95220937/191116865-a8d21ad8-2b42-4d46-a96c-18f525b0da33.png)
 
  ## Confirmation Emails:
   After customers successful purchase, an automatic email containing all of their order confirmation details was sent to their emails they have given. An image of how this confirmation email looks like can be seen below:
