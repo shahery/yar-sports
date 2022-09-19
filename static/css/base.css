@@ -25,6 +25,11 @@ body {
     margin-left: 0%;
 }
 
+.move-center {
+    margin-left: 35% !important;
+    margin-top: 50px !important;
+}
+
 /* for wishlist */
 
 .display {
