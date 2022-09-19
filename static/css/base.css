@@ -406,12 +406,6 @@ main {
   }
 }
 
-@media (max-width: 1170px) {
-    #mc_embed_signup {
-        width: auto !important;
-    }
-}
-
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -424,10 +418,6 @@ main {
 
     .header-container {
         padding-top: 164px;
-    }
-
-    #mc_embed_signup {
-        margin: auto !important;
     }
 }
 
