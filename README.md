@@ -398,6 +398,8 @@
 
  ## Social Media Platform:
   Market research strategy was performed that needed to promote the YAR Sports website. Based on this and the target audience YAR Sports facebook business page was created for this purpose and it can be seen below:
+  
+  ![Facebook-page](https://user-images.githubusercontent.com/95220937/191015644-afaf9378-2a90-4550-8875-260394e77bdf.png)
 
 
  ## Search Engine Optimization:
