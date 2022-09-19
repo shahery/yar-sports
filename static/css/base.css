@@ -348,7 +348,6 @@ a.category-badge > span.badge:hover {
 
 .footer {
     background-color: #0072b1;
-    margin-top: 10px;
     width: auto !important;
 }
 
@@ -359,12 +358,22 @@ a.category-badge > span.badge:hover {
 }
 
 .move-center {
-    margin-left: 35% !important;
+    margin-top: 50px !important;
+    float: left;
+    margin-left: 100px !important;
 }
 
-.move-right {
-    float: right !important;
-    margin-right: 20px !important;
+.move-left {
+    margin-left: 100px !important;
+    float: left;
+    margin-top: 80px !important;
+    clear: left;
+}
+
+.privacy {
+    margin-left: 100px !important;
+    margin-top: 82px !important;
+    float: left;
 }
 
 body {
@@ -378,6 +387,16 @@ main {
     flex-grow: 1;
 }
 
+/* -------------------------------- Mailchimp */
+
+#mc_embed_signup {
+    background: #0072b1;
+    font:14px Helvetica,Arial,sans-serif;  
+    width:700px;
+    float: right;
+    margin-right: 50px !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -385,6 +404,12 @@ main {
   .container {
     max-width: 80%;
   }
+}
+
+@media (max-width: 1170px) {
+    #mc_embed_signup {
+        width: auto !important;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -399,6 +424,10 @@ main {
 
     .header-container {
         padding-top: 164px;
+    }
+
+    #mc_embed_signup {
+        margin: auto !important;
     }
 }
 
@@ -457,7 +486,7 @@ main {
 @media (max-width: 900px) {
     .move-center {
       float: left;
-      margin-left: 20px !important;
+      margin-left: 30px !important;
     }
 }
 
@@ -470,12 +499,22 @@ main {
     .shop-now-button {
         margin-left: 40% !important;
     }
+
+    #mc_embed_signup {
+        width: auto !important;
+    }
 }
 
 /* Fix the footer on small screens */
 @media (max-width: 300px) {
     .shop-now-button {
         margin-left: 0 !important;
+        min-width: auto !important;
+    }
+
+    #mc_embed_signup {
+        width: auto !important;
+        margin: auto !important;
     }
 }
 
@@ -483,5 +522,6 @@ main {
 @media (max-width: 420px) {
     .shop-now-button {
         margin-bottom: 370px !important;
+        margin-left: 0 !important;
     }
 }
