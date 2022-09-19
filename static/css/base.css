@@ -357,23 +357,13 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-.move-center {
-    margin-top: 50px !important;
-    float: left;
-    margin-left: 100px !important;
-}
-
-.move-left {
-    margin-left: 100px !important;
-    float: left;
-    margin-top: 80px !important;
-    clear: left;
+.follow {
+    float: right;
+    margin-right: 30px;
 }
 
 .privacy {
-    margin-left: 100px !important;
-    margin-top: 82px !important;
-    float: left;
+    margin-left: 30px !important;
 }
 
 body {
@@ -393,8 +383,8 @@ main {
     background: #0072b1;
     font:14px Helvetica,Arial,sans-serif;  
     width:700px;
-    float: right;
-    margin-right: 50px !important;
+    margin: auto !important;
+    clear: both !important;
 }
 
 /* -------------------------------- Media Queries */
@@ -490,8 +480,9 @@ main {
         margin-left: 40% !important;
     }
 
-    #mc_embed_signup {
+    #mc_embed_signup { 
         width: auto !important;
+        margin: auto !important;
     }
 }
 
@@ -500,11 +491,6 @@ main {
     .shop-now-button {
         margin-left: 0 !important;
         min-width: auto !important;
-    }
-
-    #mc_embed_signup {
-        width: auto !important;
-        margin: auto !important;
     }
 }
 
