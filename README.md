@@ -277,14 +277,14 @@
    * Linting Issue: Importing checkout.signals in the checkout.apps.py file.
    * Most of these errors are auto created lines so adjusting these lines could create the problems in website.
 
-   ![flake8-correction](https://user-images.githubusercontent.com/95220937/188011428-94e3ab3f-519d-492b-a5ea-ed004cf652c9.png)
+     ![flake8-correction](https://user-images.githubusercontent.com/95220937/188011428-94e3ab3f-519d-492b-a5ea-ed004cf652c9.png)
 
  ## Automated python testing
    Automated tests for python were undertaken to check the functioning of the codes and it were all passed.Any testing that was not conducted using automated testing was done manually to ensure that site was fully functional upon deployment. Below is the screenshot 
    of automated tests that were performed for all the apps using the code 'python3 manage.py test' and we can also test all the apps 
    one by one using the code 'python3 manage.py test appname'.
 
-  ![python-testing](https://user-images.githubusercontent.com/95220937/188289408-6ff3c8e0-b330-4ca2-99ea-67d2b819c85c.png)
+   ![python-testing](https://user-images.githubusercontent.com/95220937/188289408-6ff3c8e0-b330-4ca2-99ea-67d2b819c85c.png)
 
  ## Validator Testing
    I have manually tested this project by doing the following:
@@ -292,21 +292,35 @@
    * Html checker:
      * I have checked all the html templates throughout the website and no errors were returned from [W3C Html](https://validator.w3.org/)
 
-     ![W3C-html](https://user-images.githubusercontent.com/95220937/188236076-f33a76f2-90cc-46ef-baea-eb45e6bad4e9.png)
+       ![W3C-html](https://user-images.githubusercontent.com/95220937/188236076-f33a76f2-90cc-46ef-baea-eb45e6bad4e9.png)
+     * [Products](https://user-images.githubusercontent.com/95220937/191372708-a6b75f1d-6b15-486d-9ec9-f24f03249398.png), [Products-detail](https://user-images.githubusercontent.com/95220937/191370964-93cefe9f-d4ba-42b9-8b2d-b2555b94da9d.png), [bag](https://user-images.githubusercontent.com/95220937/191370957-2fa7d836-e07f-4114-83f2-0a5e598e9def.png), [wishlist](https://user-images.githubusercontent.com/95220937/191370960-ae604699-828c-4cc2-8e24-01b94c5280fa.png),
+     [testimonial](https://user-images.githubusercontent.com/95220937/191371549-8ecae08f-7cbf-4023-a583-e6a0adf914fd.png), [Product-management](https://user-images.githubusercontent.com/95220937/191371551-7696e70f-ac6e-4f1c-b737-ce4b976ae395.png), [contact](https://user-images.githubusercontent.com/95220937/191371584-e80db3d9-23fc-4abe-acca-bc031550f28a.png), [signup](https://user-images.githubusercontent.com/95220937/191372718-546c4677-6c1c-4e93-acf7-398fdf8619d6.png), [login](https://user-images.githubusercontent.com/95220937/191372713-d717692a-6b12-426b-9280-176862ee491d.png), [profile](https://user-images.githubusercontent.com/95220937/191372937-626f27c9-f524-48c0-bf3d-91d114997dc8.png)
+
    * CSS checker:
      * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
 
-     ![W3C-css](https://user-images.githubusercontent.com/95220937/188236184-f77fe079-9740-4d2b-ba74-4c599f053d55.png)
+       ![W3C-css](https://user-images.githubusercontent.com/95220937/188236184-f77fe079-9740-4d2b-ba74-4c599f053d55.png)
+
    * JS checker:
      * No errors were returned from [JS HINT](https://jshint.com/)
 
-     ![js-hint1](https://user-images.githubusercontent.com/95220937/188236336-44e6f5ad-dd65-4c59-aeb3-ef058f7114de.png)
+       ![js-hint1](https://user-images.githubusercontent.com/95220937/188236336-44e6f5ad-dd65-4c59-aeb3-ef058f7114de.png)
+
+     * [contact](https://user-images.githubusercontent.com/95220937/191373817-715efd7a-561e-451b-8d20-17e55a79c632.png), [bag](https://user-images.githubusercontent.com/95220937/191373818-463b759b-737d-419f-832f-a640dc83ad4a.png), [checkout](https://user-images.githubusercontent.com/95220937/191373821-d41c5d7f-6efb-41ec-ac4d-78a171f6e934.png), [products](https://user-images.githubusercontent.com/95220937/191374080-889fe265-6dcf-4166-b84a-9d00f04d31ce.png), [profile](https://user-images.githubusercontent.com/95220937/191374083-fad7a9bd-55d9-4636-acc2-3d85742fbfaa.png), [custom-clearable](https://user-images.githubusercontent.com/95220937/191374086-512f9f9e-270c-44a8-a856-e2f396015fd1.png)
 
    * Accessiblity:
      * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
      in devtools.
      * Generated report is here below
-     ![lighthouse report]
+       ![home-desktop](https://user-images.githubusercontent.com/95220937/191367484-c54dbcf3-9971-4007-8334-dd2be0d52548.png)
+     * Desktop:
+
+       [products](https://user-images.githubusercontent.com/95220937/191368330-6950be23-036f-4a93-9613-2eaf6213db9c.png),
+       [products-detail](https://user-images.githubusercontent.com/95220937/191368684-f43f9653-ffb9-44d6-8274-5cde082e1e70.png), [wishlist](https://user-images.githubusercontent.com/95220937/191368709-37ee6f7e-2869-4a18-bca8-2502ae2e3ed1.png), [bag](https://user-images.githubusercontent.com/95220937/191369158-7772ba36-6962-4993-a20a-0430db82d1cf.png), [product-management](https://user-images.githubusercontent.com/95220937/191369196-5aa50df2-9484-446d-a8c4-6c6a09ab0a5f.png), [profile](https://user-images.githubusercontent.com/95220937/191368725-6014bf37-be5e-458c-b4b0-633df0069af4.png), [testimonial](https://user-images.githubusercontent.com/95220937/191369498-00bb1dc3-3b43-4556-b872-bff222fab848.png), [signup](https://user-images.githubusercontent.com/95220937/191369240-60dd5597-3339-4bfb-9fc1-449807c3872f.png), [sign-in](https://user-images.githubusercontent.com/95220937/191369504-ced4ba17-459e-4c6c-84b7-3c28b1cb2280.png), [contact](https://user-images.githubusercontent.com/95220937/191373274-7713a593-d6b8-4f14-b9a5-aa935dfbce58.png)
+
+     * Mobile:
+
+       [home](https://user-images.githubusercontent.com/95220937/191369884-fa04be6f-de6a-478e-be4b-3eac4a6bd6d8.png), [products](https://user-images.githubusercontent.com/95220937/191370169-6e8f95b8-db08-4391-8a48-0fa87791869a.png), [products-detail](https://user-images.githubusercontent.com/95220937/191370342-1b8bc653-7931-40b3-b3dd-ca9600f9aedd.png), [wishlist](https://user-images.githubusercontent.com/95220937/191369886-a830a48c-5e52-4229-be22-4b14fa82ac7b.png), [bag](https://user-images.githubusercontent.com/95220937/191370056-117129c6-9e7b-42d8-a061-93738c1f7a64.png), [product-management](https://user-images.githubusercontent.com/95220937/191370352-940c64f1-cdd6-45e4-86f1-13f21247b34a.png), [profile](https://user-images.githubusercontent.com/95220937/191369896-0c5d6d5a-28c8-4476-92f8-b86e76908423.png), [testimonial](https://user-images.githubusercontent.com/95220937/191370521-8e8b924e-e7c8-4e5b-af87-081f914f0f7f.png), [signup](https://user-images.githubusercontent.com/95220937/191370357-a0323628-54e5-421d-9c14-69eed63a19c2.png), [sign-in](https://user-images.githubusercontent.com/95220937/191370188-470b5115-7a91-4b1f-9e8f-88a2fb890522.png), [contact](https://user-images.githubusercontent.com/95220937/191373276-8d729c09-4f30-49e9-bcb3-e2547bf94880.png)
 
   ## Manual Testing:
    * Home Page:
