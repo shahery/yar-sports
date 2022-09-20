@@ -278,6 +278,9 @@
    * Most of these errors are auto created lines so adjusting these lines could create the problems in website.
 
      ![flake8-correction](https://user-images.githubusercontent.com/95220937/188011428-94e3ab3f-519d-492b-a5ea-ed004cf652c9.png)
+     
+     ![pep8](https://user-images.githubusercontent.com/95220937/191378042-392832a1-9cf3-4d8f-9890-fd98658b185c.png)
+
 
  ## Automated python testing
    Automated tests for python were undertaken to check the functioning of the codes and it were all passed.Any testing that was not conducted using automated testing was done manually to ensure that site was fully functional upon deployment. Below is the screenshot 
