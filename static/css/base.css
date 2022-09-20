@@ -392,6 +392,18 @@ main {
     clear: both !important;
 }
 
+#mc-embedded-subscribe {
+    background-color: white !important;
+    color: #0072b1 !important;
+}
+
+#mc-embedded-subscribe:hover,
+#mc-embedded-subscribe:active,
+#mc-embedded-subscribe:focus {
+    background: whitesmoke !important;
+    color: black !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
