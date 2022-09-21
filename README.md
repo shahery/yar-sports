@@ -8,16 +8,16 @@
   the website page, can add the products in the wishlist to buy later by signing in first, can add the
   products in the bag to buy it, can update or remove the products in the bag , can securily checkout
   for payments by using debit card, can view the order history in his profile, can leave a review on the
-  products by signing in first and also can view the testimonials of our satisfied customers in the home
-  page. Website owner can only add, update and delete the products in the website both through admin panel
-  and product management of the website.
+  products by signing in first, can add the testimonials for our website and also contact us to fill in the
+  form to get a quote for the products on demand. Website owner can only add, update and delete the products
+  in the website both through admin panel and product management of the website.
 
   ![Am-I-responsive](https://user-images.githubusercontent.com/95220937/191542803-fa5443b9-037a-42cf-b0b7-5903be7d8bc2.png)
 
   The deployed link can be found here: [Live Site](https://yar-sports.herokuapp.com/)
 
 # Table of contents
-  * [Users stories](#users-stories)
+  * [User stories](#user-stories)
   * [Wireframes](#wireframes)
   * [Existing Features](#existing-features)
   * [Technology Used](#technology-used)
@@ -32,36 +32,37 @@
   * [Colour Schema](#colour-schema)
   * [Favicon](#favicon)
   * [Deployment](#deployment)
+  * [Stripe Payments](#stripe-payments)
   * [Credits](#credits)
 
-# Users stories:
+# User stories:
   * Viewing and Navigation:
   
-   ![Viewing](https://user-images.githubusercontent.com/95220937/189090953-72098ca4-72e0-4f7d-97d7-4c1dcc8fc803.png)
+     ![Viewing](https://user-images.githubusercontent.com/95220937/189090953-72098ca4-72e0-4f7d-97d7-4c1dcc8fc803.png)
   * Registration and User Accounts:
 
-   ![Registration](https://user-images.githubusercontent.com/95220937/189092573-1e257f04-3877-4aa6-bd62-b6631ef487d6.png)
+     ![Registration](https://user-images.githubusercontent.com/95220937/189092573-1e257f04-3877-4aa6-bd62-b6631ef487d6.png)
   * Sorting and Searching:
 
-   ![Sorting](https://user-images.githubusercontent.com/95220937/189092670-1bd7d0c4-36f3-4556-8901-7b36472b07b6.png)
+     ![Sorting](https://user-images.githubusercontent.com/95220937/189092670-1bd7d0c4-36f3-4556-8901-7b36472b07b6.png)
   * Purchasing and Checkout:
 
-   ![Purchasing](https://user-images.githubusercontent.com/95220937/189092761-59c801af-58f6-407a-bea3-53599889d86a.png)
+     ![Purchasing](https://user-images.githubusercontent.com/95220937/189092761-59c801af-58f6-407a-bea3-53599889d86a.png)
   * Admin and Store Management:
 
-   ![Admin](https://user-images.githubusercontent.com/95220937/189092867-35e91cb9-43bb-47b0-a4ce-88380c6dd23e.png)
+     ![Admin](https://user-images.githubusercontent.com/95220937/189092867-35e91cb9-43bb-47b0-a4ce-88380c6dd23e.png)
   * Review on the Product:
 
-   ![Review-product](https://user-images.githubusercontent.com/95220937/189092940-a92a74c1-684b-4c7b-950e-60bcb3c6db78.png)
+     ![Review-product](https://user-images.githubusercontent.com/95220937/189092940-a92a74c1-684b-4c7b-950e-60bcb3c6db78.png)
   * Add to Wishlist:
 
-   ![Add-to-wishlist](https://user-images.githubusercontent.com/95220937/189093028-ce7247ff-d5a8-447b-829a-19e4349a521c.png)
+     ![Add-to-wishlist](https://user-images.githubusercontent.com/95220937/189093028-ce7247ff-d5a8-447b-829a-19e4349a521c.png)
   * Add Testimonial:
 
-   ![Add-testimonial](https://user-images.githubusercontent.com/95220937/189093092-e3b619ee-b4d4-44b4-816c-cf105680616d.png)
+     ![Add-testimonial](https://user-images.githubusercontent.com/95220937/189093092-e3b619ee-b4d4-44b4-816c-cf105680616d.png)
   * Get a quote:
 
-   ![Get-quote](https://user-images.githubusercontent.com/95220937/189625121-a8ade141-e8d3-4524-b468-cd906552bd69.png)
+     ![Get-quote](https://user-images.githubusercontent.com/95220937/189625121-a8ade141-e8d3-4524-b468-cd906552bd69.png)
  												
 
   [Back to top](#)
@@ -118,6 +119,8 @@
 
     <img width="431" alt="Quote" src="https://user-images.githubusercontent.com/95220937/189687799-0cf0d0f1-9d02-4274-9364-7462ec5b43b8.png">
 
+    [Back to top](#)
+
 
 # Existing Features
   * Navbar:
@@ -144,7 +147,8 @@
     ![Sign in](https://user-images.githubusercontent.com/95220937/186769924-94ca3705-dde2-444a-aad4-9a4949b85e0e.png)
       
   * Note:
-        Users can only use the functionality of wishlist, to leave review and profile to see his orders history by creating their account in the website.
+        Users can only use the functionality of wishlist, to leave a review on the products, add testimonial, get a
+        quote for the products on demand and profile to see his orders history by creating their account in the website.
        
   * Search the products:
     * Users can search the products using search bar showing on the navbar to find the products easily.
@@ -268,6 +272,8 @@
    * Testimonial slide show for more interative user experience design.
    * All the social links with the website page register.
    * Testimonial delete functionality in the front end.
+
+   [Back to top](#)
   
 # Testing
 
@@ -503,12 +509,18 @@
 
   ![External-links](https://user-images.githubusercontent.com/95220937/191470188-1b080c8e-51e3-424b-acc6-fede5823b574.png)
 
+  [Back to top](#)
+
 # Typography:
  The purpose of the font was to create a phenomenol feel within the website. Moreover, text colours were mostly chosen either Cyan-blue or white and some other colours as well depending on the background contrast ratio, to ensure information was accessible to users who may be visually impaired. The main font used on the site was 'Lato' and 'Oswald, this was selected using [Google Fonts](https://fonts.google.com/).
+
+ [Back to top](#)
 
 # Colour Schema:
    #555, #fff, #0072b1, red, green, blue, whitesmoke, black, #6c757d, #ffc107, #343a40, #aab7c4, #dc3545, combination 
    of these colours were used in the website for foreground and background.
+
+   [Back to top](#)
 
 # Favicon:
   Favicon was generated for this project as can be seen below
@@ -679,6 +691,8 @@
 # Stripe Payments:
   For handling payments within the website just make sure that you have set up a guide on how this can be done can be found [here](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details).
 
+  [Back to top](#)
+
 # Credits
  ## Content
    * The Idea of README.md file and the codes used for the website were also learnt from [Code Institute](https://codeinstitute.net)
@@ -687,8 +701,8 @@
    * pinax-testimonials were used in the project [pinax-testimonial](https://github.com/pinax/pinax-testimonials)
 
  ## Media
-   * Products pictures were taken from sports direct [Sports Direct](https://www.sportsdirect.com/)
-   * Main page background image was taken from pexels [pexels](https://www.pexels.com/)
+   * Products pictures were taken from [Sports Direct](https://www.sportsdirect.com/)
+   * Main page background image was taken from [pexels](https://www.pexels.com/)
 
 
  ## Acknowledgements
