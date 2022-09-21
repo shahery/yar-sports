@@ -26,6 +26,7 @@
   * [Bugs](#bugs)
   * [Database Schema](#database-schema)
   * [Marketing](#marketing)
+  * [External Resource links](#external-resource-links)
   * [Typography](#typography)
   * [Colour Schema](#colour-schema)
   * [Favicon](#favicon)
@@ -496,6 +497,10 @@
   
 
   [Back to top](#)
+# External Resource links:
+ Two external resource links were used in the project with rel=Noopener, target=_blank and aria-label=external link to particular site. It can be seen here below:
+
+  ![External-links](https://user-images.githubusercontent.com/95220937/191470188-1b080c8e-51e3-424b-acc6-fede5823b574.png)
 
 # Typography:
  The purpose of the font was to create a phenomenol feel within the website. Moreover, text colours were mostly chosen either Cyan-blue or white and some other colours as well depending on the background contrast ratio, to ensure information was accessible to users who may be visually impaired. The main font used on the site was 'Lato' and 'Oswald, this was selected using [Google Fonts](https://fonts.google.com/).
