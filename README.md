@@ -12,8 +12,9 @@
   page. Website owner can only add, update and delete the products in the website both through admin panel
   and product management of the website.
 
+  ![Am-I-responsive](https://user-images.githubusercontent.com/95220937/191542803-fa5443b9-037a-42cf-b0b7-5903be7d8bc2.png)
 
-  The deployed link can be found here: [Live Site]
+  The deployed link can be found here: [Live Site](https://yar-sports.herokuapp.com/)
 
 # Table of contents
   * [Users stories](#users-stories)
