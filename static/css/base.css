@@ -354,7 +354,7 @@ a.category-badge > span.badge:hover {
 .footer {
     background-color: #0072b1;
     width: auto !important;
-    margin-top: 30px !important;
+    margin-top: 130px !important;
 }
 
 .fa-facebook-square {
@@ -508,6 +508,13 @@ main {
 @media (max-width: 460px) {
     body {
         margin-top: 50px !important;
+    }
+}
+
+/* Fix the banner bottom on small screens */
+@media (max-width: 360px) {
+    body {
+        margin-top: 130px !important;
     }
 }
 
