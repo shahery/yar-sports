@@ -14,6 +14,11 @@ import os
 import dj_database_url
 from pathlib import Path
 
+import django
+from django.utils.encoding import force_str
+django.utils.encoding.force_text = force_str
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -22,13 +27,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+# SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = '0fa2a41f6ef584b098b62ec5f116a9085f4185257d01c627'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['yar-sports.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['localhost']
+CSRF_TRUSTED_ORIGINS = ['https://8000-shahery-yarsports-shhfb0lch5u.ws-eu97.gitpod.io']
+
+# ALLOWED_HOSTS = ['yar-sports.herokuapp.com', 'localhost']
+# CSRF_TRUSTED_ORIGINS = ['https://front.bluemix.net']
 
 
 # Application definition
@@ -55,8 +65,10 @@ INSTALLED_APPS = [
 
     # other
     'crispy_forms',
+    'crispy_bootstrap4',
     'django_extensions',
     'storages',
+    'corsheaders',
 ]
 
 GRAPH_MODELS = {
@@ -67,6 +79,7 @@ GRAPH_MODELS = {
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -235,3 +248,7 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+
+CORS_ORIGIN_WHITELIST = [    'https://8000-shahery-yarsports-shhfb0lch5u.ws-eu92.gitpod.io']
+CORS_ALLOW_HEADERS = [    'accept',    'accept-encoding',    'authorization',    'content-type',    'dnt',    'origin',    'user-agent',    'x-csrftoken',    'x-requested-with',]
